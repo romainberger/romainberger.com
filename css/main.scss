@@ -1,0 +1,197 @@
+@import "compass/css3";
+
+@mixin title{
+    text-shadow: 4px 4px 0 #ccc;
+}
+
+@mixin transitionAll($time: .1s){
+    @include transition-property(all);
+    @include transition-duration($time);
+    @include transition-timing-function(ease-in-out);
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+    color: #222;
+}
+
+body {
+    background: url('../img/background_white.png');
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background: #8e2424;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #8e2424;
+    color: #fff;
+    text-shadow: none;
+}
+a{ color: #000; text-decoration: none;}
+a:visited{ color: #000;}
+a:hover{ color: #444;}
+a:focus{outline: thin dotted;}
+a:hover,a:active{outline: 0;}
+.fl{ float: left;}
+.fr{ float: right;}
+.cb{ clear: both;}
+.center{ text-align: center;}
+/* =============================================================================
+   GENERAL
+   ========================================================================== */
+#wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+#header{
+    width: 800px;
+    margin: 30px auto 50px auto;
+}
+h1, .h1like{
+    @include title;
+
+    font-size: 65px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 24px;
+}
+.block{
+    width: 480px;
+    height: 230px;
+    margin: 30px 0 20px 0;
+    padding: 0;
+}
+.leftBlock{ padding-right: 20px; float: left;}
+.rightBlock{ padding-left: 20px; float: right;}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 30px;
+    background: url('../img/bgLink.png') left 50px no-repeat;
+    @include transitionAll(.1s);
+
+    &:hover{
+        background-position: left top;
+    }
+}
+.bgLink{
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+#youtube{ background: url('../img/youtube.png') top left no-repeat;}
+#twitter{ background: url('../img/twitter.png') top left no-repeat;}
+#facebook{ background: url('../img/facebook.png') top left no-repeat;}
+#github{ background: url('../img/github.png') top left no-repeat;}
+.contactText{
+    text-align: center;
+    margin: 40px 0 20px 0;
+    a:hover{ text-decoration: underline;}
+}
+#lab{
+    line-height: 2.5;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    @include text-shadow(2px 2px 0 #ccc);
+
+    &:hover{color: #111;}
+}
+/* =============================================================================
+    MOBILE
+   ========================================================================== */
+
+/* iPhone 4 ----------- */
+@media only screen and (max-width : 320px){
+    #wrapper{
+        width: 100%;
+        padding: 0 20px;
+        #header{ width: 100%; margin: 30px 0 30px 0;}
+    }
+    h1, .h1like{ font-size: 33px;}
+    .h1like{ text-align: center;}
+    h2{ font-size: 22px;}
+    .leftBlock{ margin-top: 20px;}
+    .leftBlock, .rightBlock{
+        width: 100%;
+        clear: both;
+        float: none;
+        margin: 0;
+
+        div{ text-align: center;}
+        li:last-child{ margin: 0;}
+    }
+    .contactText{
+        font-size: 20px;
+    }
+}
+/* =============================================================================
+    LAB
+   ========================================================================== */
+.wrapper_lab{
+
+    h2{
+        @include title;
+        font-size: 30px;
+    }
+
+    ul{
+        margin-left: 110px;
+    }
+
+    li{
+        float: none;
+        clear: both;
+        background: none;
+        width: auto;
+        height: 30px;
+        list-style: circle;
+
+        a{
+            @include transitionAll(.2s);
+            display: inline-block;
+            width: 100%;
+            height: 30px;
+
+            span{
+                display: inline-block;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                color: #666;
+                @include transitionAll(.2s);
+            }
+            &:hover{
+                text-indent: 10px;
+
+                span{
+                    opacity: 1;
+                    filter: alpha(opacity=100);
+                }
+            }
+        }
+    }
+}
