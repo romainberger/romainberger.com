@@ -3,14 +3,15 @@
 IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
 
 <Limit GET POST>
-order deny,allow
-deny from all
-allow from all
+  order deny,allow
+  deny from all
+  allow from all
 </Limit>
 <Limit PUT DELETE>
-order deny,allow
-deny from all
+  order deny,allow
+  deny from all
 </Limit>
+
 AuthName romainberger.com
 AuthUserFile /home/romainbe/public_html/_vti_pvt/service.pwd
 AuthGroupFile /home/romainbe/public_html/_vti_pvt/service.grp
@@ -21,7 +22,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.romainberger.com$ [NC]
 RewriteRule ^(.*)$ http://romainberger.com/$1 [R=301,L]
 
-RewriteRule ^/paint$ /Paint [QSA,L]
+RewriteRule ^paint$ /Paint [QSA,L]
+RewriteRule ^music$ /music.php [QSA,L]
+RewriteRule ^about$ /about.php [QSA,L]
 
 # ----------------------------------------------------------------------
 # Gzip compression

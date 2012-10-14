@@ -1,4 +1,7 @@
 @import "compass/css3";
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
 
 @mixin title{
     text-shadow: 4px 4px 0 #ccc;
@@ -62,7 +65,8 @@ a:hover,a:active{outline: 0;}
     width: 800px;
     margin: 30px auto 50px auto;
 }
-h1, .h1like{
+h1,
+.h1like{
     @include title;
 
     font-size: 65px;
@@ -70,8 +74,10 @@ h1, .h1like{
     margin: 0;
     padding: 0;
 }
-h2{
-    font-size: 24px;
+h2,
+.leftBlock p{
+    font-size: 20px;
+    font-weight: bold;
 }
 .block{
     width: 480px;
@@ -103,10 +109,6 @@ li{
     width: 50px;
     height: 50px;
 }
-#youtube{ background: url('../img/youtube.png') top left no-repeat;}
-#twitter{ background: url('../img/twitter.png') top left no-repeat;}
-#facebook{ background: url('../img/facebook.png') top left no-repeat;}
-#github{ background: url('../img/github.png') top left no-repeat;}
 .contactText{
     text-align: center;
     margin: 40px 0 20px 0;
