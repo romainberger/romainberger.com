@@ -16,7 +16,7 @@ AuthName romainberger.com
 AuthUserFile /home/romainbe/public_html/_vti_pvt/service.pwd
 AuthGroupFile /home/romainbe/public_html/_vti_pvt/service.grp
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.php
 
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www.romainberger.com$ [NC]

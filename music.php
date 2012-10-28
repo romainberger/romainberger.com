@@ -17,8 +17,21 @@
 <body>
 
     <div id="wrapper">
-        <h1 class="center"><a href="<?php echo _BASE_URL_; ?>">Are you lost?</a></h1>
-        <p class="center"><a href="<?php echo _BASE_URL_; ?>">Back to the real world</a></p>
+        <header>
+            <a href="<?php echo _BASE_URL_; ?>"><h1>Romain Berger</h1></a>
+        </header>
+
+        <h2></h2>
+
+        <h2>Production</h2>
+        <p>I have produced a few demos / ep</p>
+        <ul>
+            <li>Sihtu - Demo</li>
+            <li>Sihtu - V.I.T.R.I.O.L.</li>
+            <li>Dawn of Justice - Ep</li>
+            <li>Yurakane - The call for revenge</li>
+        </ul>
+
     </div><!-- end wrapper -->
 
     <script>

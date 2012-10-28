@@ -27,7 +27,6 @@ textarea {
     font-family: sans-serif;
     color: #222;
 }
-
 body {
     background: url('../img/background_white.png');
     margin: 0;
@@ -39,7 +38,6 @@ body {
     color: #fff;
     text-shadow: none;
 }
-
 ::selection {
     background: #8e2424;
     color: #fff;
@@ -54,26 +52,55 @@ a:hover,a:active{outline: 0;}
 .fr{ float: right;}
 .cb{ clear: both;}
 .center{ text-align: center;}
-/* =============================================================================
-   GENERAL
-   ========================================================================== */
-#wrapper{
+
+.wrapper{
     width: 1000px;
     margin: 0 auto;
 }
-#header{
-    width: 800px;
-    margin: 30px auto 50px auto;
+/* =============================================================================
+    HEADER
+   ========================================================================== */
+header{
+    height: 70px;
+    line-height: 70px;
+    background: #222;
 }
-h1,
-.h1like{
-    @include title;
-
-    font-size: 65px;
-    font-weight: bold;
+h1{
+    float: left;
     margin: 0;
-    padding: 0;
+    color: #efefef;
+    font-size: 32px;
 }
+#header_right{
+    float: right;
+    line-height: 70px;
+
+    .text_link{
+        float: left;
+        margin: 0 30px 0 0;
+        text-transform: uppercase;
+        color: #efefef;
+        font-size: 25px;
+    }
+
+    .sep{
+        display: inline-block;
+        width: 2px;
+        height: 50px;
+        margin: 10px 0 10px 0;
+        background: #efefef;
+    }
+
+    .icons{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 10px 0 10px 20px;
+    }
+}
+/* =============================================================================
+
+   ========================================================================== */
 h2,
 .leftBlock p{
     font-size: 20px;
@@ -132,7 +159,7 @@ li{
     #wrapper{
         width: 100%;
         padding: 0 20px;
-        #header{ width: 100%; margin: 30px 0 30px 0;}
+        header{ width: 100%; margin: 30px 0 30px 0;}
     }
     h1, .h1like{ font-size: 33px;}
     .h1like{ text-align: center;}
@@ -196,4 +223,14 @@ li{
             }
         }
     }
+}
+/* =============================================================================
+    ABOUT
+   ========================================================================== */
+#about{
+    width: 800px;
+    margin: 0 auto;
+}
+.section{
+    border-bottom: 1px solid #ccc;
 }
