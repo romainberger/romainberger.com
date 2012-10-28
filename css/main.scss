@@ -30,6 +30,7 @@ textarea {
 body {
     background: url('../img/background_white.png');
     margin: 0;
+    padding: 0;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -52,6 +53,7 @@ a:hover,a:active{outline: 0;}
 .fr{ float: right;}
 .cb{ clear: both;}
 .center{ text-align: center;}
+header{ display: block;}
 
 .wrapper{
     width: 1000px;
@@ -81,6 +83,10 @@ h1{
         text-transform: uppercase;
         color: #efefef;
         font-size: 25px;
+
+        &.selected{
+            color: lighten(#8e2424, 30%);
+        }
     }
 
     .sep{

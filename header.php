@@ -19,9 +19,9 @@
 			<a href="<?php echo _BASE_URL_; ?>"><h1>ROMAIN BERGER</h1></a>
 
 			<div id="header_right">
-				<a href="#" class="text_link">WEB</a>
-				<a href="#" class="text_link">MUSIC</a>
-				<a href="#" class="text_link">ABOUT</a>
+				<a href="#" class="text_link <?php if(isset($currentIndex) && $currentIndex == 'web') echo 'selected'; ?>">WEB</a>
+				<a href="<?php echo _BASE_URL_; ?>music" class="text_link <?php if(isset($currentIndex) && $currentIndex == 'music') echo 'selected'; ?>">MUSIC</a>
+				<a href="<?php echo _BASE_URL_; ?>about" class="text_link <?php if(isset($currentIndex) && $currentIndex == 'about') echo 'selected'; ?>">ABOUT</a>
 				<div class="sep"></div>
 				<a href="http://twitter.com/romain__berger" class="icons sprites-twitter" target="_blank"></a>
 				<a href="http://github.com/romainberger" class="icons sprites-github" target="_blank"></a>
