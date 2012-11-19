@@ -25,7 +25,7 @@ input,
 select,
 textarea {
     font-family: sans-serif;
-    color: #222;
+    color: #444;
 }
 body {
     background: url('../img/background_white.png');
@@ -45,7 +45,6 @@ body {
     text-shadow: none;
 }
 a{ color: #000; text-decoration: none;}
-a:visited{ color: #000;}
 a:hover{ color: #444;}
 a:focus{outline: thin dotted;}
 a:hover,a:active{outline: 0;}
@@ -59,6 +58,7 @@ header{ display: block;}
     width: 1000px;
     margin: 0 auto;
 }
+
 /* =============================================================================
     HEADER
    ========================================================================== */
@@ -104,74 +104,36 @@ h1{
         margin: 10px 0 10px 20px;
     }
 }
+
 /* =============================================================================
-
+    Footer
    ========================================================================== */
-h2,
-.leftBlock p{
-    font-size: 20px;
-    font-weight: bold;
-}
-.block{
-    width: 480px;
-    height: 230px;
-    margin: 30px 0 20px 0;
-    padding: 0;
-}
-.leftBlock{ padding-right: 20px; float: left;}
-.rightBlock{ padding-left: 20px; float: right;}
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-li{
-    float: left;
-    height: 50px;
-    width: 50px;
-    margin-right: 30px;
-    background: url('../img/bgLink.png') left 50px no-repeat;
-    @include transitionAll(.1s);
+footer {
+    height: 30px;
+    background: #222;
+    color: #ddd;
 
-    &:hover{
-        background-position: left top;
+    a {
+        color: #fff;
     }
 }
-.bgLink{
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-.contactText{
-    text-align: center;
-    margin: 40px 0 20px 0;
-    a:hover{ text-decoration: underline;}
-}
-#lab{
-    line-height: 2.5;
-    font-size: 20px;
-    text-align: center;
-    font-weight: bold;
-    @include text-shadow(2px 2px 0 #ccc);
 
-    &:hover{color: #111;}
-}
 /* =============================================================================
     MOBILE
    ========================================================================== */
 
 /* iPhone 4 ----------- */
-@media only screen and (max-width : 320px){
-    #wrapper{
+@media only screen and (max-width : 320px) {
+    #wrapper {
         width: 100%;
         padding: 0 20px;
-        header{ width: 100%; margin: 30px 0 30px 0;}
+        header { width: 100%; margin: 30px 0 30px 0;}
     }
-    h1, .h1like{ font-size: 33px;}
-    .h1like{ text-align: center;}
-    h2{ font-size: 22px;}
-    .leftBlock{ margin-top: 20px;}
-    .leftBlock, .rightBlock{
+    h1, .h1like { font-size: 33px;}
+    .h1like { text-align: center;}
+    h2 { font-size: 22px;}
+    .leftBlock { margin-top: 20px;}
+    .leftBlock, .rightBlock {
         width: 100%;
         clear: both;
         float: none;
@@ -180,25 +142,26 @@ li{
         div{ text-align: center;}
         li:last-child{ margin: 0;}
     }
-    .contactText{
+    .contactText {
         font-size: 20px;
     }
 }
+
 /* =============================================================================
     LAB
    ========================================================================== */
-.wrapper_lab{
+.wrapper_lab {
 
-    h2{
+    h2 {
         @include title;
         font-size: 30px;
     }
 
-    ul{
+    ul {
         margin-left: 110px;
     }
 
-    li{
+    li {
         float: none;
         clear: both;
         background: none;
@@ -206,23 +169,23 @@ li{
         height: 30px;
         list-style: circle;
 
-        a{
+        a {
             @include transitionAll(.2s);
             display: inline-block;
             width: 100%;
             height: 30px;
 
-            span{
+            span {
                 display: inline-block;
                 opacity: 0;
                 filter: alpha(opacity=0);
                 color: #666;
                 @include transitionAll(.2s);
             }
-            &:hover{
+            &:hover {
                 text-indent: 10px;
 
-                span{
+                span {
                     opacity: 1;
                     filter: alpha(opacity=100);
                 }
@@ -230,13 +193,42 @@ li{
         }
     }
 }
+
 /* =============================================================================
     ABOUT
    ========================================================================== */
-#about{
+.about {
     width: 800px;
     margin: 0 auto;
-}
-.section{
-    border-bottom: 1px solid #ccc;
+
+    section {
+        float: right;
+        width: 600px;
+        margin: 0 0 20px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    h3 {
+        float: left;
+        width: 200px;
+        height: 28px;
+        margin: 0;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: normal;
+    }
+
+    h4 {
+        height: 28px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: bold;
+    }
+
+    .date {
+        margin: 0 0 5px 0;
+        font-size: 14px;
+        font-style: italic;
+    }
 }
