@@ -15,7 +15,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: #fff;
-	font-family: Helvetica, sans-serif;
+	font-family: 'Open Sans', Helvetica, sans-serif;
 	color: $baseColor;
 }
 
@@ -62,10 +62,15 @@ a:hover {
 		float: left;
 		margin: 0 70px 0 0;
 		font-size: 50px;
+		font-family: Helvetica, sans-serif;
 	}
 
 	a h1 {
 		color: $baseColor;
+	}
+
+	a:hover {
+		text-decoration: none;
 	}
 
 	.nav {
@@ -78,7 +83,12 @@ a:hover {
 		font-size: 25px;
 		line-height: 2.6;
 
-		&.current {
+		&:hover {
+			border-bottom: 4px solid lighten($lightGrey, 20%);
+		}
+
+		&.current,
+		&.current:hover {
 			border-bottom: 4px solid $linkColor;
 		}
 	}
@@ -117,6 +127,38 @@ a:hover {
 }
 .resume {
 	display: none;
+	margin-top: 50px;
+	padding-top: 20px;
+	background: url(/static/img/border.png) left top repeat-x;
+
+	h3 i {
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		margin: 0 10px 3px 0;
+		@include border-radius(10px);
+		background: $baseColor;
+	}
+
+	section {
+		padding-left: 20px;
+	}
+
+	h4 {
+		margin: 30px 0 5px 0;
+		text-decoration: underline;
+	}
+
+	.date {
+		margin: 0 0 20px 0;
+		font-style: italic;
+		color: $lightGrey
+	}
+
+	ul {
+		padding-left: 20px;
+		list-style: circle;
+	}
 }
 
 /* =============================================================================
