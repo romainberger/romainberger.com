@@ -36,6 +36,10 @@ ul {
 	margin: 0;
 }
 
+p {
+	font-size: 16px;
+}
+
 a {
 	color: $linkColor;
 	text-decoration: none;
@@ -49,6 +53,15 @@ a:hover {
 .fr { float: right}
 .cb { clear: both}
 .underline { text-decoration: underline}
+
+.bullet {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	margin: 0 10px 3px 0;
+	@include border-radius(10px);
+	background: $baseColor;
+}
 
 /* =============================================================================
 	Header
@@ -131,15 +144,6 @@ a:hover {
 	padding-top: 20px;
 	background: url(/static/img/border.png) left top repeat-x;
 
-	h3 i {
-		display: inline-block;
-		width: 5px;
-		height: 5px;
-		margin: 0 10px 3px 0;
-		@include border-radius(10px);
-		background: $baseColor;
-	}
-
 	section {
 		padding-left: 20px;
 	}
@@ -184,4 +188,22 @@ a:hover {
 .site-list dd {
 	margin: 0;
 	padding: 0;
+}
+
+/* =============================================================================
+	Music
+   ========================================================================== */
+.music {
+	h4 {
+		margin: 20px 0 5px 0;
+		font-size: 20px;
+	}
+
+	p {
+		margin: 5px 0;
+	}
+
+	.more {
+		font-size: 15px;
+	}
 }
