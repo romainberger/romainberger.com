@@ -9,10 +9,14 @@ def index():
 def about():
 	return render_template('about.html')
 
-@app.route('/lab')
-def lab():
-	return render_template('lab.html')
+@app.route('/web')
+def web():
+	return render_template('web.html')
 
 @app.route('/music')
 def music():
 	return render_template('music.html')
+
+@app.route('/lab')
+def lab():
+	return render_template('lab.html')

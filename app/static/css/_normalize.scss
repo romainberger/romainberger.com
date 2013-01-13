@@ -19,24 +19,6 @@ section {
   display: block;
 }
 
-// Display block in IE6-9 and FF3
-// -------------------------
-
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-// Prevents modern browsers from displaying 'audio' without controls
-// -------------------------
-
-audio:not([controls]) {
-    display: none;
-}
-
 // Base settings
 // -------------------------
 
@@ -45,10 +27,7 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-// Focus states
-a:focus {
-  @include tab-focus();
-}
+
 // Hover & Active
 a:hover,
 a:active {
@@ -82,10 +61,6 @@ img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
-
-// Prevent max-width from affecting Google Maps
-#mapCanvas label { width: auto; display:inline; }
-#mapCanvas img { max-width: none; }
 
 // Forms
 // -------------------------
