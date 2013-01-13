@@ -78,6 +78,7 @@ button,
 input {
   *overflow: visible; // Inner spacing ie IE6/7
   line-height: normal; // FF3/4 have !important on line-height in UA stylesheet
+  font-family: inherit
 }
 button::-moz-focus-inner,
 input::-moz-focus-inner { // Inner padding and border oddities in FF3/4

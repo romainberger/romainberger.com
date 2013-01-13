@@ -7,7 +7,7 @@ html,
 	min-height: 100%;
 }
 .main {
-	padding-bottom: 98px;
+	padding-bottom: 128px;
 }
 
 body {
@@ -42,11 +42,13 @@ a {
 }
 a:hover {
 	color: $baseColor;
+	text-decoration: underline;
 }
 
 .fl { float: left}
 .fr { float: right}
 .cb { clear: both}
+.underline { text-decoration: underline}
 
 /* =============================================================================
 	Header
@@ -97,6 +99,23 @@ a:hover {
 }
 
 /* =============================================================================
+	About
+   ========================================================================== */
+.resume-button {
+	margin: 0;
+	padding: 0;
+	color: $baseColor;
+	border: none;
+	background: #fff;
+}
+.resume-button:hover {
+	text-decoration: underline;
+}
+.resume {
+	display: none;
+}
+
+/* =============================================================================
 	Web
    ========================================================================== */
 .os-block {
@@ -105,4 +124,18 @@ a:hover {
 	@include border-radius(5px);
 	border: 1px solid $lightGrey;
 	@include box-shadow(0 0 3px rgba(0, 0, 0, .3))
+}
+.web-title {
+	margin-top: 50px;
+}
+.web-site {
+	margin-bottom: 50px
+}
+.site-list dt {
+	margin: 25px 0 10px 0;
+	font-size: 20px;
+}
+.site-list dd {
+	margin: 0;
+	padding: 0;
 }
