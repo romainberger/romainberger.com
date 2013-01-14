@@ -1,7 +1,3 @@
-/*!
- * romainberger.com
- */
-
 // really complicated piece of software
 !function($, window, document) {
 
