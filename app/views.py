@@ -20,3 +20,7 @@ def music():
 @app.route('/lab')
 def lab():
 	return render_template('lab.html', page = 'lab')
+
+@app.route('/contact')
+def contact():
+	return render_template('contact.html', page = 'contact')

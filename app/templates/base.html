@@ -9,7 +9,7 @@
     <title>{% block title %}Romain Berger{% endblock %}</title>
     <meta name="description" content="Romain Berger">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="{{ static('css/main.css') }}">
 
     <!--
@@ -27,6 +27,7 @@
                     <li {% if page is defined and page == 'about' %}class="current"{% endif %}><a href="/about" title="About">About</a></li>
                     <li {% if page is defined and page == 'web' %}class="current"{% endif %}><a href="/web" title="Web">Web</a></li>
                     <li {% if page is defined and page == 'music' %}class="current"{% endif %}><a href="/music" title="Music">Music</a></li>
+                    <li {% if page is defined and page == 'contact' %}class="current"{% endif %}><a href="/contact" title="Contact">Contact</a></li>
                 </ul>
                 <div class="cb"></div>
             </div>
