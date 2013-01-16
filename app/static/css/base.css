@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$baseColor".
-        on line 19 of /Users/romainberger/Web/Sites/romain_berger/romainberger.com/app/static/css/base.scss
+        on line 22 of /Users/romainberger/Web/Sites/romain_berger/romainberger.com/app/static/css/base.scss
 
 Backtrace:
-/Users/romainberger/Web/Sites/romain_berger/romainberger.com/app/static/css/base.scss:19
+/Users/romainberger/Web/Sites/romain_berger/romainberger.com/app/static/css/base.scss:22
 /Users/romainberger/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.294/lib/sass/script/variable.rb:49:in `_perform'
 /Users/romainberger/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.294/lib/sass/script/node.rb:40:in `perform'
 /Users/romainberger/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.0.alpha.294/lib/sass/tree/visitors/perform.rb:293:in `visit_prop'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$baseColor\".\A         on line 19 of /Users/romainberger/Web/Sites/romain_berger/romainberger.com/app/static/css/base.scss"; }
+  content: "Syntax error: Undefined variable: \"$baseColor\".\A         on line 22 of /Users/romainberger/Web/Sites/romain_berger/romainberger.com/app/static/css/base.scss"; }

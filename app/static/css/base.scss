@@ -1,3 +1,6 @@
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
 html,
 .wrap {
 	height: 100%;
@@ -103,6 +106,7 @@ h3 {
 		margin-right: 40px;
 		font-size: 25px;
 		line-height: 2.6;
+		border-bottom: 4px solid #fff;
 
 		a {
 			color: $baseColor;
@@ -142,8 +146,32 @@ h3 {
 
 	a {
 		display: inline-block;
-		margin-right: 30px;
+		height: 24px;
+		padding-left: 31px;
+		margin-right: 32px;
+		line-height: 1.7;
+
+		&:hover {
+			color: $baseColor;
+			text-decoration: none;
+		}
 	}
+}
+
+/* =============================================================================
+	Home
+   ========================================================================== */
+.home {
+
+	h2 {
+		font-size: 32px;
+	}
+
+	p {
+		margin-top: 30px;
+		font-size: 22px;
+	}
+
 }
 
 /* =============================================================================
