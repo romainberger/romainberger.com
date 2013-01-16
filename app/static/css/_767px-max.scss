@@ -19,4 +19,24 @@
 
 	}
 
+	.header .nav {
+		float: left
+	}
+	.header .nav li {
+		display: block;
+		float: left;
+
+		&.break {
+			clear: left
+		}
+	}
+
+}
+
+@media (max-width: 498px) {
+
+	.header h1 {
+		width: 210px;
+	}
+
 }

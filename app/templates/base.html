@@ -26,7 +26,7 @@
                 <ul class="nav">
                     <li {% if page is defined and page == 'about' %}class="current"{% endif %}><a href="/about" title="About">About</a></li>
                     <li {% if page is defined and page == 'web' %}class="current"{% endif %}><a href="/web" title="Web">Web</a></li>
-                    <li {% if page is defined and page == 'music' %}class="current"{% endif %}><a href="/music" title="Music">Music</a></li>
+                    <li class="{% if page is defined and page == 'music' %}current{% endif %} break"><a href="/music" title="Music">Music</a></li>
                     <li {% if page is defined and page == 'contact' %}class="current"{% endif %}><a href="/contact" title="Contact">Contact</a></li>
                 </ul>
                 <div class="cb"></div>
