@@ -19,7 +19,7 @@ def music():
 
 @app.route('/lab')
 def lab():
-	return render_template('lab.html', page = 'lab')
+	return render_template('lab.html', page = 'web')
 
 @app.route('/contact')
 def contact():
