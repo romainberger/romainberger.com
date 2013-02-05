@@ -8,7 +8,7 @@ RewriteRule ^web$ /web.html [QSA,L]
 RewriteRule ^music$ /music.html [QSA,L]
 RewriteRule ^contact$ /contact.html [QSA,L]
 
-ErrorDocument 404 /index.html
+ErrorDocument 404 http://romainberger.com/
 
 AddType text/cache-manifest .appcache
 
