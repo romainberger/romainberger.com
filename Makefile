@@ -16,7 +16,6 @@ renamefiles:
 
 copyfiles:
 	cp files/.htaccess build/.htaccess &&\
-	cp files/manifest.appcache build/manifest.appcache &&\
 	cp files/robot.txt build/robot.txt
 
 renameassets:
