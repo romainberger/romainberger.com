@@ -1,4 +1,4 @@
-all: freeze minimifyjs renamefiles copyfiles renameassets
+all: freeze minimifyjs renamefiles copyfiles
 
 freeze:
 	python freeze.py
