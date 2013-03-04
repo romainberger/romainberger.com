@@ -1,10 +1,10 @@
-all: freeze minimifyjs renamefiles copyfiles
+all: freeze minifyjs renamefiles copyfiles
 
 freeze:
 	python freeze.py
 
-minimifyjs:
-	uglifyjs -o build/static/js/main.min.js build/static/js/main.js
+minifyjs:
+	uglifyjs build/static/js/main.min.js -o build/static/js/main.js
 
 renamefiles:
 	cd build &&\
