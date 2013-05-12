@@ -4,7 +4,7 @@ freeze:
 	python freeze.py
 
 minifyjs:
-	uglifyjs build/static/js/main.min.js -o build/static/js/main.js
+	uglifyjs build/static/js/main.js -o build/static/js/main.min.js
 
 renamefiles:
 	cd build &&\
