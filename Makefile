@@ -51,14 +51,14 @@ deploy:
 	@cp build/web.html ../web.html
 	@cp build/contact.html ../contact.html
 	@cp build/music.html ../music.html
-	@echo "                   ${CHECK}"
+	@echo "                   ✔ Done"
 	# static files
 	@printf "Static files...    "
 	@cp -r build/static ../static
-	@echo "                   ${CHECK}"
+	@echo "                   ✔ Done"
 	# other stuff
 	@printf "Dotfiles...    "
 	@cp build/.htaccess ../.htaccess
-	@cp build/robo.txt ../robot.txt
+	@cp build/robot.txt ../robot.txt
 	@cp build/humans.txt ../humans.txt
-	@echo "                   ${CHECK}\n"
+	@echo "                   ✔ Done\n"
