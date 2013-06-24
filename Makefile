@@ -43,14 +43,22 @@ renameassets:
 
 deploy:
 	# that's dirty
-	@echo "${HR}"
-	@printf "Moving files...    "
+	@echo "\nDeploying motherfucker...    "
+	# pages
+	@printf "Copying pages...    "
 	@cp build/index.html ../index.html
 	@cp build/about.html ../about.html
 	@cp build/web.html ../web.html
 	@cp build/contact.html ../contact.html
-	@echo "ok"
+	@cp build/music.html ../music.html
+	@echo "                   ${CHECK}"
+	# static files
 	@printf "Static files...    "
 	@cp -r build/static ../static
 	@echo "                   ${CHECK}"
-	@echo "${HR}"
+	# other stuff
+	@printf "Dotfiles...    "
+	@cp build/.htaccess ../.htaccess
+	@cp build/robo.txt ../robot.txt
+	@cp build/humans.txt ../humans.txt
+	@echo "                   ${CHECK}\n"
