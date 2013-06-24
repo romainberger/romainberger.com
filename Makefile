@@ -43,13 +43,14 @@ renameassets:
 
 deploy:
 	# that's dirty
+	@echo "${HR}"
 	@printf "Moving files...    "
-	@mv build/index.html ../index.html
-	@mv build/about.html ../about.html
-	@mv build/web.html ../web.html
-	@mv build/contact.html ../contact.html
+	@cp build/index.html ../index.html
+	@cp build/about.html ../about.html
+	@cp build/web.html ../web.html
+	@cp build/contact.html ../contact.html
 	@echo "ok"
 	@printf "Static files...    "
-	@rm -rf ../static
-	@mv build/static ../static
-	@echo "ok"
+	@cp -r build/static ../static
+	@echo "                   ${CHECK}"
+	@echo "${HR}"
