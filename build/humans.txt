@@ -1,0 +1,8 @@
+Hello!!
+
+Website built with <3, Flask, Frozen Flask, SCSS/Compass, and my brain.
+If you're interested in seeing the code (although there is nothing impressive)
+it's here: https://github.com/romainberger/romainberger.com
+
+
+Romain

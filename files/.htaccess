@@ -10,8 +10,6 @@ RewriteRule ^contact$ /contact.html [QSA,L]
 
 ErrorDocument 404 http://romainberger.com/
 
-AddType text/cache-manifest .appcache
-
 # ----------------------------------------------------------------------
 # Gzip compression
 # ----------------------------------------------------------------------

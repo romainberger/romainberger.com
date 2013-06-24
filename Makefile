@@ -42,9 +42,7 @@ renameassets:
 	@echo "Hash: "$$time
 
 deploy:
-	# that's dirty
-	@echo "\nDeploying motherfucker...    "
-	# pages
+	@echo "Deploying motherfucker...    "
 	@printf "Copying pages...    "
 	@cp build/index.html ../index.html
 	@cp build/about.html ../about.html
@@ -52,13 +50,11 @@ deploy:
 	@cp build/contact.html ../contact.html
 	@cp build/music.html ../music.html
 	@echo "                   ✔ Done"
-	# static files
 	@printf "Static files...    "
 	@cp -r build/static ../static
 	@echo "                   ✔ Done"
-	# other stuff
 	@printf "Dotfiles...    "
 	@cp build/.htaccess ../.htaccess
 	@cp build/robot.txt ../robot.txt
 	@cp build/humans.txt ../humans.txt
-	@echo "                   ✔ Done\n"
+	@echo "                   ✔ Done"
