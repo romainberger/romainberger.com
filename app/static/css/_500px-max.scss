@@ -1,0 +1,33 @@
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .main-nav {
+        display: none
+    }
+    .header h1 {
+        width: 100%;
+    }
+
+    // adjust for side nav
+    .main-content {
+        position: relative;
+        padding: 0 20px;
+        left: 0;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    .nav-trigger {
+        display: none
+    }
+
+}

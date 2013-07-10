@@ -18,11 +18,21 @@
     -->
 </head>
 <body>
-    <div class="wrap">
+    <div class="side-nav">
+        <ul>
+            <li><a href="https://medium.com/@romain__berger" title="Blog on Medium">Blog</a></li>
+            <li {% if page is defined and page == 'about' %}class="current"{% endif %}><a href="/about" title="About">About</a></li>
+            <li {% if page is defined and page == 'web' %}class="current"{% endif %}><a href="/web" title="Web">Web</a></li>
+            <li class="{% if page is defined and page == 'music' %}current{% endif %} break"><a href="/music" title="Music">Music</a></li>
+            <li {% if page is defined and page == 'contact' %}class="current"{% endif %}><a href="/contact" title="Contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="wrap main-content">
         <div class="main">
             <div class="header wrapper">
+                <button class="nav-trigger">Menu</button>
                 <a href="/" title="Romain Berger"><h1>Romain Berger //</h1></a>
-                <ul class="nav">
+                <ul class="nav main-nav">
                     <li><a href="https://medium.com/@romain__berger" title="Blog on Medium">Blog</a></li>
                     <li {% if page is defined and page == 'about' %}class="current"{% endif %}><a href="/about" title="About">About</a></li>
                     <li {% if page is defined and page == 'web' %}class="current"{% endif %}><a href="/web" title="Web">Web</a></li>
@@ -44,6 +54,8 @@
         <a class="sprites-youtube" href="http://www.youtube.com/user/romainmetal" title="Youtube" target="_blank">Youtube</a>
     </div>
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendors/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="{{ static('js/main.js') }}"></script>
     <script>
         var _gaq=[['_setAccount','UA-25925169-1'],['_trackPageview']];
