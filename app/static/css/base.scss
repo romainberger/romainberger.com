@@ -88,10 +88,25 @@ h3 {
 		padding: 2px 10px;
 		color: #ccc;
 		text-decoration: none;
+	}
+	.side-nav .current a,
+	.side-nav a:hover {
+		color: #fff;
+		background: #000;
+	}
+	.side-nav .sep {
+		display: block;
+		height: 1px;
+		margin: 20px 0;
+		background: #999;
+	}
 
-		&:hover {
-			background: #000;
-		}
+	.side-social .icon {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin-right: 10px;
+		background: #ccc;
 	}
 
 /* =============================================================================

@@ -61,6 +61,10 @@
       }
     })
 
+    sideNav.find('a').click(function() {
+      animateNav(false)
+    })
+
     // @todo close on click when opened
     // container.click(function() {
     //   opened && animateNav(false)
