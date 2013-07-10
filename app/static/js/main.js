@@ -16,11 +16,11 @@
   }
 
   // Navigation panel for small screens
-  var navTrigger = $('.nav-trigger')
-    , sideNav = $('.side-nav')
-    , body = $('body')
-    , container = $('.main-content')
-    , opened = false
+  var navTrigger
+    , sideNav
+    , body
+    , container
+    , opened
 
   /**
    * action: open if true else close
@@ -48,6 +48,12 @@
   }
 
   $(document).ready(function() {
+      navTrigger = $('.nav-trigger')
+    , sideNav = $('.side-nav')
+    , body = $('body')
+    , container = $('.main-content')
+    , opened = false
+
     resizeSideNav()
 
     $(window).resize(resizeSideNav)
