@@ -46,7 +46,6 @@ copyfiles:
 	@cp files/robot.txt build/robot.txt
 	@echo "                   ${CHECK}"
 
-# This is fucked up
 renameassets:
 	@echo "${HR}"
 	@printf "\033[36mRenaming assets...\033[39m"
