@@ -2,15 +2,17 @@
  * romainberger.com
  */
 
-!function($) {
+!function() {
 
-  $(document).ready(function() {
+  var trigger = document.querySelector('#resume-trigger')
+    , resume  = document.querySelector('#resume')
 
-    $('#resume-trigger').click(function() {
-      $(this).fadeOut(500)
-      $('#resume').fadeIn(500)
-    })
+  if (typeof trigger != 'undefined' && trigger != null
+      && typeof resume != 'undefined' && resume != null) {
+    trigger.addEventListener('click', function() {
+      this.style.display = 'none'
+      resume.style.display = 'block'
+    }, false)
+  }
 
-  })
-
-}(window.jQuery);
+}();
