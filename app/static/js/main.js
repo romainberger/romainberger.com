@@ -28,10 +28,10 @@
   function animateNav(action) {
     container.animate({
       left: action ? '200px' : 0
-    }, 200)
+    }, 150)
     sideNav.animate({
       left: action ? 0 : '-200px'
-    }, 200)
+    }, 150)
 
     if (action) {
       body.addClass('no-scroll')
