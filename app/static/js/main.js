@@ -31,16 +31,16 @@
     }, 150)
     sideNav.animate({
       left: action ? 0 : '-200px'
-    }, 150)
-
-    if (action) {
-      body.addClass('no-scroll')
-      opened = true
-    }
-    else {
-      body.removeClass('no-scroll')
-      opened = false
-    }
+    }, 150, function() {
+      if (action) {
+        body.addClass('no-scroll')
+        opened = true
+      }
+      else {
+        body.removeClass('no-scroll')
+        opened = false
+      }
+    })
   }
 
   function resizeSideNav() {
@@ -75,6 +75,16 @@
     // container.click(function() {
     //   opened && animateNav(false)
     // })
+
+    $(window).bind({
+        keydown: function(e) {
+          e.keyCode === 27 && animateNav(false)
+        }
+
+      , click: function(e) {
+          container.has(e.target).length && opened && animateNav(false)
+        }
+    })
 
   })
 
