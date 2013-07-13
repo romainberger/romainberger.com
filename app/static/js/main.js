@@ -71,11 +71,6 @@
       animateNav(false)
     })
 
-    // @todo close on click when opened
-    // container.click(function() {
-    //   opened && animateNav(false)
-    // })
-
     $(window).bind({
         keydown: function(e) {
           e.keyCode === 27 && animateNav(false)
