@@ -37,8 +37,12 @@
     <div class="wrap main-content">
         <div class="main">
             <div class="header wrapper">
-                <button class="nav-trigger">Menu</button>
-                <a href="/" title="Romain Berger"><h1>Romain Berger //</h1></a>
+                <button class="nav-trigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </button>
+                <a href="/" title="Romain Berger"><h1>Romain Berger<span> //</span></h1></a>
                 <ul class="nav main-nav">
                     <li><a href="https://medium.com/@romain__berger" title="Blog on Medium">Blog</a></li>
                     <li {% if page is defined and page == 'about' %}class="current"{% endif %}><a href="/about" title="About">About</a></li>
@@ -55,10 +59,14 @@
         </div>
     </div>
     <div class="footer wrapper">
-        <a class="sprites-twitter" href="https://twitter.com/romain__berger" title="Twitter" target="_blank">Twitter</a>
-        <a class="sprites-github" href="https://github.com/romainberger" title="Github" target="_blank">Github</a>
-        <a class="sprites-soundcloud" href="https://soundcloud.com/romainberger" title="Soundcloud" target="_blank">Soundcloud</a>
-        <a class="sprites-youtube" href="http://www.youtube.com/user/romainmetal" title="Youtube" target="_blank">Youtube</a>
+        <div>
+            <a class="sprites-twitter" href="https://twitter.com/romain__berger" title="Twitter" target="_blank">Twitter</a>
+            <a class="sprites-github" href="https://github.com/romainberger" title="Github" target="_blank">Github</a>
+        </div>
+        <div>
+            <a class="sprites-soundcloud" href="https://soundcloud.com/romainberger" title="Soundcloud" target="_blank">Soundcloud</a>
+            <a class="sprites-youtube" href="http://www.youtube.com/user/romainmetal" title="Youtube" target="_blank">Youtube</a>
+        </div>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

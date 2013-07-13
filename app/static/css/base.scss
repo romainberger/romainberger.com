@@ -177,6 +177,10 @@ h3 {
 	padding: 30px 0 50px 0;
 	background: url(/static/img/border.png) left top repeat-x;
 
+	div {
+		display: inline-block;
+	}
+
 	a {
 		display: inline-block;
 		height: 24px;
