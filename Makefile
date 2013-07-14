@@ -44,6 +44,7 @@ copyfiles:
 	@printf "\033[36mCopying files...\033[39m"
 	@cp files/.htaccess build/.htaccess
 	@cp files/robot.txt build/robot.txt
+	@cp files/humans.txt build/humans.txt
 	@echo "                  ${CHECK}"
 
 renameassets:
