@@ -75,6 +75,7 @@ deploy:
 	@cp build/music.html ../music.html
 	@echo "                   ✔ Done"
 	@printf "Static files...    "
+	@rm -rf ../static
 	@cp -r build/static ../static
 	@echo "                    ✔ Done"
 	@printf "Dotfiles...    "
