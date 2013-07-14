@@ -74,6 +74,42 @@ h3 {
 }
 
 /* =============================================================================
+	Side nav
+   ========================================================================== */
+   	.side-nav {
+		position: absolute;
+		width: 180px;
+		left: -200px;
+		padding: 30px 0;
+		background: #333;
+		@include box-shadow(inset -7px 0 10px #232323);
+	}
+	.side-nav a {
+		display: block;
+		padding: 2px 10px;
+		color: #ccc;
+		text-decoration: none;
+	}
+	.side-nav .current a,
+	.side-nav a:hover {
+		color: #fff;
+		background: #000;
+	}
+	.side-nav .sep {
+		display: block;
+		height: 1px;
+		margin: 20px 0;
+		background: #999;
+	}
+
+	.side-social .icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+	}
+
+/* =============================================================================
 	Header
    ========================================================================== */
 
@@ -140,6 +176,10 @@ h3 {
 	height: 18px;
 	padding: 30px 0 50px 0;
 	background: url(/static/img/border.png) left top repeat-x;
+
+	div {
+		display: inline-block;
+	}
 
 	a {
 		display: inline-block;
