@@ -75,7 +75,6 @@ deploy:
 	@echo "                   ✔ Done"
 	@printf "Static files...    "
 	@cp -r build/static ../static
-	@rm build/static/css/*.scss
 	@echo "                    ✔ Done"
 	@printf "Dotfiles...    "
 	@cp build/.htaccess ../.htaccess
