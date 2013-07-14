@@ -15,14 +15,14 @@ python-server:
 open:
 	@open "http://127.0.0.1:5000"
 
-build: freeze minifyjs renamefiles copyfiles renameassets removefiles
+build: freeze minifyjs renamefiles copyfiles renameassets removefiles goodbye
 
 freeze:
 	@echo "\n${HR}"
 	@echo "\033[36mFreezing...\033[39m"
 	@python freeze.py
 	@printf "\033[36mFreezing...\033[39m"
-	@echo "                   ${CHECK}"
+	@echo "                       ${CHECK}"
 
 minifyjs:
 	@echo "${HR}"
@@ -37,23 +37,21 @@ renamefiles:
 	@mv build/contact build/contact.html
 	@mv build/music build/music.html
 	@mv build/web build/web.html
-	@echo "                   ${CHECK}"
+	@echo "                 ${CHECK}"
 
 copyfiles:
 	@echo "${HR}"
 	@printf "\033[36mCopying files...\033[39m"
 	@cp files/.htaccess build/.htaccess
 	@cp files/robot.txt build/robot.txt
-	@echo "                   ${CHECK}"
+	@echo "                  ${CHECK}"
 
 renameassets:
 	@echo "${HR}"
 	@printf "\033[36mRenaming assets...\033[39m"
 	@mv build/static/css/main.css build/static/css/${TIME}-main.css
 	@mv build/static/js/main.min.js build/static/js/${TIME}-main.min.js
-	@echo "                   ${CHECK}"
-	@echo "Hash: ${TIME}"
-	@echo "${TIME}" | pbcopy
+	@echo "                ${CHECK}"
 	@echo "${HR}\n"
 	@rake build["${TIME}"]
 
@@ -61,6 +59,9 @@ removefiles:
 	@rm build/static/css/*.scss
 	@rm build/static/js/main.js
 	@rm -rf build/static/img/sprites
+
+goodbye:
+	@echo "\n\033[32m✔    Build successful\033[39m\n\n"
 
 deploy:
 	@echo ""
