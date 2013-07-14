@@ -15,7 +15,7 @@ python-server:
 open:
 	@open "http://127.0.0.1:5000"
 
-build: freeze minifyjs renamefiles copyfiles renameassets
+build: freeze minifyjs renamefiles copyfiles renameassets removefiles
 
 freeze:
 	@echo "\n${HR}"
@@ -55,6 +55,12 @@ renameassets:
 	@echo "Hash: ${TIME}"
 	@echo "${TIME}" | pbcopy
 	@echo "${HR}\n"
+	@rake build["${TIME}"]
+
+removefiles:
+	@rm build/static/css/*.scss
+	@rm build/static/js/main.js
+	@rm -rf build/static/img/sprites
 
 deploy:
 	@echo ""
