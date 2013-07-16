@@ -1,15 +1,4 @@
 
-server: compass python-server open
-
-compass:
-	compass watch
-
-python-server:
-	./server.py
-
-open:
-	@open "http://127.0.0.1:5000"
-
 deploy:
 	@echo ""
 	@echo "Deploying motherfucker...    "

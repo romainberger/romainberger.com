@@ -92,3 +92,17 @@ task :build do
   puts hr+"\n\n"
 
 end
+
+task :compass do
+  system "compass watch"
+end
+
+task :python do
+  system "./server.py"
+end
+
+task :open do
+ `open "http://127.0.0.1:5000"`
+end
+
+multitask :server => ['compass', 'python', 'open']
