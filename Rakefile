@@ -106,3 +106,7 @@ task :open do
 end
 
 multitask :server => ['compass', 'python', 'open']
+
+task :jshint do
+  `jshint app/static/js/main.js`
+end
