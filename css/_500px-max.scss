@@ -1,0 +1,81 @@
+
+@media (max-width: 585px) {
+    .footer {
+        div {
+            display: block;
+            text-align: center;
+
+            a:last-child {
+                margin-right: 0
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 0;
+    }
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .header {
+        a h1 {
+            display: inline-block;
+            width: 48%;
+            margin: 0;
+
+            span { display: none }
+        }
+        button {
+            display: inline-block;
+            float: left;
+            width: 40px;
+            margin: 35px 30px 0 0;
+            padding: 4px;
+            border: 1px solid #ccc;
+            @include border-radius(3px);
+            background: 0;
+
+            &:focus {
+                border: 1px solid #333;
+                outline: 0;
+                @include box-shadow(0);
+            }
+
+            i {
+                display: block;
+                height: 3px;
+                width: 100%;
+                margin: 4px 0;
+                background: #333;
+                @include border-radius(4px);
+            }
+        }
+    }
+
+    .main-nav {
+        display: none
+    }
+    .header h1 {
+        width: 100%;
+    }
+
+    // adjust for side nav
+    .main-content {
+        position: relative;
+        padding: 0 20px;
+        left: 0;
+    }
+
+}
+
+@media (min-width: 500px) {
+
+    .nav-trigger {
+        display: none
+    }
+
+}
