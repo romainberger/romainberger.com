@@ -15,7 +15,7 @@ rmall = !git rm $(git ls-files -d)
 <pre>$ git rm path/to/my/file.js</pre>
 <p>But when you have a lot of files to remove and you are lazy, it can be annoying to type the name of every file. This is where the second part gets interesting.</p>
 
-<h3>Yo dawg I heard you like git</h3>
+<h2>Yo dawg I heard you like git</h2>
 <p>The following command</p>
 {% highlight bash %}
 $ git ls-files -d
@@ -27,7 +27,7 @@ $ git rm $(git ls-files -d)
 {% endhighlight %}
 <p>Boom. With one command you removed every files. But this command is way too long for my lazy fingers so let’s create an alias.</p>
 
-<h3>Git alias</h3>
+<h2>Git alias</h2>
 <p>Creating an alias for git is really easy. I will assume you already know how to create some, but if that’s not the case <a target="_blank" href="http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks">you can learn here</a>.
 <br>With this command though, there is a subtlety. Let’s try and add this to the git config file:</p>
 {% highlight bash %}
