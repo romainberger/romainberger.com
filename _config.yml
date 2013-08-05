@@ -1,3 +1,9 @@
 name: Romain Berger
 markdown: redcarpet
-pygments: true
+exclude:
+    - Rakefile
+    - Makefile
+    - Readme.md
+    - config.rb
+    - sprites
+    - '*.scss'
