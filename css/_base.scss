@@ -108,12 +108,16 @@ h3 {
 		height: 16px;
 		margin-right: 10px;
 	}
+	.nav-trigger {
+        display: none
+    }
 
 /* =============================================================================
 	Header
    ========================================================================== */
 
 .header {
+	margin-bottom: 70px;
 	padding: 60px 0 40px 0;
 	background: url(/img/border.png) left bottom repeat-x;
 
