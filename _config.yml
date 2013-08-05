@@ -7,3 +7,4 @@ exclude:
     - config.rb
     - sprites
     - '*.scss'
+permalink: pretty
