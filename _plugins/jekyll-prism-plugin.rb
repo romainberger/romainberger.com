@@ -36,7 +36,7 @@ module Jekyll
 
       <<-HTML
 <div>
-  <pre data-line='#{@options["linenos"]}'><code class='language-#{@lang}'>#{code}</code></pre>
+  <pre class="language-#{@lang}" data-line="#{@options["linenos"]}"><code class="language-#{@lang}">#{code}</code></pre>
 </div>
       HTML
     end
