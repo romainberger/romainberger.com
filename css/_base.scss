@@ -205,8 +205,37 @@ h3 {
 	}
 
 	p {
-		margin-top: 30px;
+		margin-top: 10px;
 		font-size: 22px;
+
+		a {
+			text-decoration: underline
+		}
+	}
+
+	.posts {
+		margin-top: 50px;
+	}
+
+}
+
+.post-list {
+
+	li {
+		clear: both;
+		float: none;
+		margin-bottom: 15px;
+	}
+
+	.post-title {
+		color: #333;
+		font-size: 18px;
+	}
+	.post-date {
+		float: right;
+		color: #999;
+		text-transform: uppercase;
+		font-size: 12px;
 	}
 
 }
