@@ -30,13 +30,13 @@ task :build do
 
   # replace file names
   files = Dir['_site/**/**/*.html']
-  files << '_site/index.html'
+#  files << '_site/index.html'
   files.each do |file_name|
     text = File.read(file_name)
 
     File.open(file_name, 'w') do |f|
-      content = text.gsub('main.js', hash+'-main.js')
-      content = text.gsub('main.css', hash+'-main.css')
+      content = text.gsub('main.js', "#{hash}-main.js")
+      content = content.gsub('main.css', "#{hash}-main.css")
       content = content.gsub('<script src="/js/vendors/prism.js"></script>', '')
       f.write(content)
     end
