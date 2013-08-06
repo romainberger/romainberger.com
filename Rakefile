@@ -1,6 +1,7 @@
 # Encoding: UTF-8
 
 require 'securerandom'
+require 'fileutils'
 
 hash = SecureRandom.uuid
 check = "\033[32m✔ Done\033[39m"
@@ -40,6 +41,9 @@ task :build do
       f.write(content)
     end
   end
+
+  # Move everything to a different directory to avoid overriding everything
+  FileUtils.cp_r('_site', '_build')
 
   timeEnd = Time.now
 
