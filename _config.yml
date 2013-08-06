@@ -1,0 +1,10 @@
+name: Romain Berger
+markdown: redcarpet
+exclude:
+    - Rakefile
+    - Makefile
+    - Readme.md
+    - config.rb
+    - sprites
+    - '*.scss'
+permalink: pretty

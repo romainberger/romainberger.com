@@ -1,0 +1,385 @@
+@import "sprites/*.png";
+@include all-sprites-sprites;
+
+html,
+.wrap {
+	height: 100%;
+}
+.wrap {
+	height: auto;
+	min-height: 100%;
+}
+.main {
+	padding-bottom: 128px;
+}
+
+body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #fff;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	color: $baseColor;
+}
+
+::selection {
+	background: $baseColor;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: $baseColor;
+	color: #fff;
+	text-shadow: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	font-size: 16px;
+}
+
+a {
+	color: $linkColor;
+	text-decoration: none;
+}
+a:hover {
+	color: $highlight;
+	text-decoration: underline;
+}
+
+.fl { float: left}
+.fr { float: right}
+.cb { clear: both}
+.underline { text-decoration: underline}
+
+.bullet {
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	margin: 0 10px 3px 0;
+	@include border-radius(10px);
+	background: $baseColor;
+}
+
+h2 {
+	font-size: 20px;
+}
+h3 {
+	font-size: 24px;
+}
+
+/* =============================================================================
+	Side nav
+   ========================================================================== */
+   	.side-nav {
+		position: absolute;
+		width: 180px;
+		left: -200px;
+		padding: 30px 0;
+		background: #333;
+		@include box-shadow(inset -7px 0 10px #232323);
+	}
+	.side-nav a {
+		display: block;
+		padding: 2px 10px;
+		color: #ccc;
+		text-decoration: none;
+	}
+	.side-nav .current a,
+	.side-nav a:hover {
+		color: #fff;
+		background: #000;
+	}
+	.side-nav .sep {
+		display: block;
+		height: 1px;
+		margin: 20px 0;
+		background: #999;
+	}
+
+	.side-social .icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		margin-right: 10px;
+	}
+	.nav-trigger {
+        display: none
+    }
+
+/* =============================================================================
+	Header
+   ========================================================================== */
+
+.header {
+	margin-bottom: 70px;
+	padding: 60px 0 40px 0;
+	background: url(/img/border.png) left bottom repeat-x;
+
+	h1 {
+		float: left;
+		margin: 0 28px 0 0;
+		font-size: 50px;
+		font-family: Helvetica, sans-serif;
+	}
+
+	a h1 {
+		color: $baseColor;
+	}
+
+	a:hover {
+		color: $highlight;
+		text-decoration: none;
+	}
+
+	.nav li {
+		display: inline-block;
+		height: 57px;
+		margin-right: 30px;
+		font-size: 25px;
+		line-height: 2.6;
+		border-bottom: 4px solid #fff;
+
+		a {
+			color: $baseColor;
+		}
+
+		a:hover {
+			color: $highlight;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			border-bottom: 4px solid lighten($lightGrey, 20%);
+		}
+
+		&.current,
+		&.current:hover {
+			border-bottom: 4px solid $linkColor;
+		}
+
+	}
+
+}
+
+
+/* =============================================================================
+	Footer
+   ========================================================================== */
+
+.footer {
+	position: relative;
+	height: 18px;
+	padding: 30px 0 50px 0;
+	background: url(/img/border.png) left top repeat-x;
+
+	div {
+		display: inline-block;
+	}
+
+	a {
+		display: inline-block;
+		height: 24px;
+		padding-left: 31px;
+		margin-right: 32px;
+		line-height: 1.7;
+
+		&:hover {
+			color: $baseColor;
+			text-decoration: none;
+		}
+	}
+}
+
+/* =============================================================================
+	Home
+   ========================================================================== */
+.home {
+
+	h2 {
+		font-size: 32px;
+	}
+
+	p {
+		margin-top: 10px;
+		font-size: 22px;
+
+		a {
+			text-decoration: underline
+		}
+	}
+
+	.posts {
+		margin-top: 50px;
+	}
+
+}
+
+.post-list {
+
+	li {
+		clear: both;
+		float: none;
+		margin-bottom: 15px;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.post-title {
+		color: #333;
+		font-size: 18px;
+
+		&:hover {
+			color: $highlight;
+		}
+	}
+	.post-date {
+		float: right;
+		color: #999;
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+
+}
+
+/* =============================================================================
+	About
+   ========================================================================== */
+.resume-button {
+	margin: 0;
+	padding: 0;
+	color: $baseColor;
+	border: none;
+	background: #fff;
+}
+.resume-button:hover {
+	text-decoration: underline;
+}
+.resume {
+	display: none;
+	margin-top: 50px;
+	padding-top: 20px;
+	background: url(/img/border.png) left top repeat-x;
+
+	section {
+		padding-left: 20px;
+	}
+
+	h4 {
+		margin: 30px 0 5px 0;
+		text-decoration: underline;
+	}
+
+	.date {
+		margin: 0 0 20px 0;
+		font-style: italic;
+		color: $lightGrey
+	}
+
+	ul {
+		padding-left: 20px;
+		list-style: circle;
+	}
+}
+
+/* =============================================================================
+	Web
+   ========================================================================== */
+.os-block {
+	margin-bottom: 20px;
+	padding: 10px;
+	@include border-radius(5px);
+	border: 1px solid $lightGrey;
+	@include box-shadow(0 0 3px rgba(0, 0, 0, .3))
+}
+.web-title {
+	margin-top: 50px;
+}
+.web-site {
+	margin-bottom: 50px
+}
+.site-list dt {
+	margin: 25px 0 10px 0;
+	font-size: 20px;
+}
+.site-list dd {
+	margin: 0;
+	padding: 0;
+}
+
+/* =============================================================================
+	Music
+   ========================================================================== */
+.music {
+	h4 {
+		margin: 20px 0 5px 0;
+		font-size: 20px;
+	}
+
+	p {
+		margin: 5px 0;
+	}
+
+	.more {
+		font-size: 15px;
+	}
+
+	.record-list {
+		padding-left: 20px;
+		list-style: circle;
+	}
+}
+
+/* =============================================================================
+	Contact
+   ========================================================================== */
+.contact-list {
+	padding-left: 20px;
+	list-style: circle;
+}
+
+/* =============================================================================
+	Posts
+   ========================================================================== */
+.post {
+
+	h1 {
+		margin: 0;
+	}
+	.meta {
+		font-size: 13px;
+		color: #808080;
+	}
+
+	.content {
+		margin-top: 30px;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	h2 {
+		margin: 30px 0 0 0;
+		color: #000;
+	}
+
+	.inline-code {
+		display: inline-block;
+		padding: 0 4px;
+		font-size: 14px;
+		font-family: monaco, 'Courier New', monospace;
+		background: #e7e7e7;
+		@include border-radius(3px);
+	}
+}
