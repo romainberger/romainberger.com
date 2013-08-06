@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html manifest="nope">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Romain Berger My Favorite Git Alias</title>
+    <meta name="description" content="Romain Berger">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="/css/d7dcc62a-58bb-484f-b7c3-2613afb6e064-main.css">
+</head>
+<body>
+    <div class="side-nav">
+        <ul>
+            <li><a href="/" title="Blog">Blog</a></li>
+            <li><a href="/about" title="About">About</a></li>
+            <li><a href="/web" title="Web">Web</a></li>
+            <li><a href="/music" title="Music">Music</a></li>
+            <li><a href="/contact" title="Contact">Contact</a></li>
+        </ul>
+        <i class="sep"></i>
+        <ul class="side-social">
+            <li><a href="https://twitter.com/romain__berger" title="Twitter" target="_blank"><i class="icon sprites-twitter-side"></i>Twitter</a></li>
+            <li><a href="https://github.com/romainberger" title="Github" target="_blank"><i class="icon sprites-github-side"></i>Github</a></li>
+            <li><a href="https://soundcloud.com/romainberger" title="Soundcloud" target="_blank"><i class="icon sprites-soundcloud-side"></i>Soundcloud</a></li>
+            <li><a href="http://www.youtube.com/user/romainmetal" title="Youtube" target="_blank"><i class="icon sprites-youtube-side"></i>Youtube</a></li>
+        </ul>
+    </div>
+    <div class="wrap main-content">
+        <div class="main">
+            <div class="header wrapper">
+                <button class="nav-trigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </button>
+                <a href="/" title="Romain Berger"><h1>Romain Berger<span> //</span></h1></a>
+                <ul class="nav main-nav">
+                    <li><a href="/" title="Blog">Blog</a></li>
+                    <li><a href="/about" title="About">About</a></li>
+                    <li><a href="/web" title="Web">Web</a></li>
+                    <li><a href="/music" title="Music">Music</a></li>
+                    <li><a href="/contact" title="Contact">Contact</a></li>
+                </ul>
+                <div class="cb"></div>
+            </div>
+            <div class="wrapper">
+                <div class="post">
+    <h1>My Favorite Git Alias</h1>
+    <p class="meta">11 May 2013</p>
+    <div class="content">
+        <p>As pretty much every developer, I am lazy and try to make my life super easy. Being lazy often involves creating alias for every thing you type more than twice. And as I use git all day long, creating git aliases is a logical path.</p>
+
+<p>One of my favorite git alias is this one:</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">rmall = !git rm $(git ls-files -d)</code></pre>
+</div>
+
+<p>Everything starts with the <span class="inline-code">git rm</span> which removes files from the working tree and the index. So to remove a file you usually type</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">$ git rm path/to/my/file.js</code></pre>
+</div>
+
+<p>But when you have a lot of files to remove and you are lazy, it can be annoying to type the name of every file. This is where the second part gets interesting.</p>
+
+<h2>Yo dawg I heard you like git</h2>
+
+<p>The following command</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">$ git ls-files -d</code></pre>
+</div>
+
+<p>shows you the files that have been removed (-d stands for -deleted). So if you combine the two together you can remove every files that has been deleted in one command.
+<br>To do this, wrap the second command in <span class="inline-code">$()</span>. Which gives us:</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">$ git rm $(git ls-files -d)</code></pre>
+</div>
+
+<p>Boom. With one command you removed every files. But this command is way too long for my lazy fingers so let’s create an alias.</p>
+
+<h2>Git alias</h2>
+
+<p>Creating an alias for git is really easy. I will assume you already know how to create some, but if that’s not the case <a target="_blank" href="http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks">you can learn here</a>.
+<br>With this command though, there is a subtlety. Let’s try and add this to the git config file:</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">[alias]
+    rmall = rm $(git ls-files -d)</code></pre>
+</div>
+
+<p>If you try to run this with <span class="inline-code">git rmall</span>, git will throw an error:</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">error: unknown switch 'd'</code></pre>
+</div>
+
+<p>All we need is to add a <span class="inline-code">!</span> in front of the command to tell git to run this as a command to the bash:</p>
+
+<div>
+  <pre class="language-bash" data-line=""><code class="language-bash">[alias]
+    rmall = !git rm $(git ls-files -d)</code></pre>
+</div>
+
+<p>And you’re good to go.</p>
+
+<p>If you’re interested in seeing others git aliases, you can <a target="_blank" href="https://github.com/romainberger/dotfiles">check out my dotfiles</a>.</p>
+
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer wrapper">
+        <div>
+            <a class="sprites-twitter" href="https://twitter.com/romain__berger" title="Twitter" target="_blank">Twitter</a>
+            <a class="sprites-github" href="https://github.com/romainberger" title="Github" target="_blank">Github</a>
+        </div>
+        <div>
+            <a class="sprites-soundcloud" href="https://soundcloud.com/romainberger" title="Soundcloud" target="_blank">Soundcloud</a>
+            <a class="sprites-youtube" href="http://www.youtube.com/user/romainmetal" title="Youtube" target="_blank">Youtube</a>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/vendors/jquery-1.10.2.min.js"><\/script>')</script>
+    
+    <script src="/js/main.js"></script>
+    <script>
+        var _gaq=[['_setAccount','UA-25925169-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+</body>
+</html>
