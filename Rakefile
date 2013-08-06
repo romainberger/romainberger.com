@@ -50,3 +50,7 @@ task :build do
   puts hr+"\n\n"
 
 end
+
+task :jshint do
+  system "jshint js/main.js"
+end
