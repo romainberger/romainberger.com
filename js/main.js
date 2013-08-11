@@ -6,16 +6,13 @@
 
   'use strict';
 
-  var trigger = document.querySelector('#resume-trigger')
-    , resume  = document.querySelector('#resume')
+  var trigger = $('#resume-trigger')
+    , resume  = $('#resume')
 
-  if (typeof trigger != 'undefined' && trigger !== null &&
-      typeof resume != 'undefined' && resume !== null) {
-    trigger.addEventListener('click', function() {
-      this.style.display = 'none'
-      resume.style.display = 'block'
-    }, false)
-  }
+  trigger.click(function() {
+    trigger.slideUp()
+    resume.slideDown()
+  })
 
   // Navigation panel for small screens
   var navTrigger
