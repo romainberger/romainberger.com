@@ -47,7 +47,10 @@ a {
 	color: $linkColor;
 	text-decoration: none;
 }
-a:hover {
+a:hover,
+a:focus {
+	outline: 0;
+	@include box-shadow(0);
 	color: $highlight;
 	text-decoration: underline;
 }
@@ -262,7 +265,10 @@ h3 {
 	border: none;
 	background: #fff;
 }
-.resume-button:hover {
+.resume-button:hover,
+.resume-button:focus {
+	outline: 0;
+	@include box-shadow(0);
 	text-decoration: underline;
 }
 .resume {
