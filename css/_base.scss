@@ -152,8 +152,12 @@ h3 {
 			color: $baseColor;
 		}
 
-		a:hover {
+		a:hover,
+		a:focus {
+			outline: 0;
+			@include box-shadow(0);
 			color: $highlight;
+			text-decoration: none;
 		}
 
 		&:last-child {
