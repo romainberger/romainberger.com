@@ -7,6 +7,8 @@ hash = SecureRandom.uuid
 check = "\033[32m✔ Done\033[39m"
 hr = "\033[37m--------------------------------------------------\033[39m"
 
+task :default => :jshint
+
 task :build do
 
   timeStart = Time.now
@@ -56,5 +58,6 @@ task :build do
 end
 
 task :jshint do
+  puts 'Running Jshint'
   system "jshint js/main.js"
 end
