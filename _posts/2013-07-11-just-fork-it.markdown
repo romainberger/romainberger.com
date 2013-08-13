@@ -2,6 +2,10 @@
 layout: post
 title: Just Fork It
 date:   2013-07-11 20:00:00
+
+image: html-contenteditable-ftw.png
+background-color: '#fff'
+image-class: center
 ---
 
 <p>Open source is cool for lots of reasons.</p>

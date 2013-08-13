@@ -70,4 +70,9 @@
         left: 0;
     }
 
+    .post-image,
+    .post-image.center {
+        background-size: cover;
+    }
+
 }
