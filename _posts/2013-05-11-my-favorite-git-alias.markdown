@@ -2,6 +2,10 @@
 layout: post
 title: My Favorite Git Alias
 date:   2013-05-11 20:00:00
+
+image: git-is-dope.png
+background-color: '#000'
+image-class: center
 ---
 
 
