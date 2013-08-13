@@ -12,7 +12,7 @@ image-class: center
 <p>The thing I like the most is that you can fork a project and create your own independent thing. Don’t like a detail in a project? Just fork it.</p>
 
 <h2>Boom</h2>
-<p>I am an avid user of <a target="_blank" href="https://github.com/holman/boom">boom</a>. I mostly use it to store urls I never remember. A <span class="inline-code">$ boom open url</span> and my problem is solved.</p>
+<p>I am an avid user of <a target="_blank" href="http://zachholman.com/boom/">boom</a>. I mostly use it to store urls I never remember. A <span class="inline-code">$ boom open url</span> and my problem is solved.</p>
 <p>But while it solved a problem, it created another one. I just can’t remember how I named my items in it. <em>"Was it url-beta? url-preprod? or maybe just url?"</em>. At the end I would just <span class="inline-code">$ boom all</span> to see the name.</p>
 <p>This made me wish there were a git-like “did you mean this?” when I type something wrong. So I forked it, and implemented it. Okay maybe “implemented it” is a bit strong as all I did was searching how it was done in git and do something similar.</p>
 
