@@ -15,6 +15,8 @@ task :build do
 
   puts "\n#{hr}\nBuilding site"
 
+  FileUtils.rm_rf('_build')
+
   `jekyll build`
 
   # minify js
