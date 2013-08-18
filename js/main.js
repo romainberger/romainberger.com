@@ -12,6 +12,10 @@
   trigger.click(function() {
     trigger.slideUp()
     resume.slideDown()
+
+    $('html, body').animate({
+      scrollTop: resume.offset().top
+    }, 1000)
   })
 
   // Navigation panel for small screens
