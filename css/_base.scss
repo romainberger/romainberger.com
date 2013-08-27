@@ -397,3 +397,11 @@ h3 {
 		@include border-radius(3px);
 	}
 }
+
+.lab-list {
+	padding-left: 18px;
+
+	li {
+		list-style: disc;
+	}
+}
