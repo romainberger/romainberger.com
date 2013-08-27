@@ -3,7 +3,7 @@
 
   'use strict';
 
-  var generator  = new BreakdownGenerator()
+  var generator  = new BreakdownGenerator({samplePath: '/lab/breakdown-generator/samples/'})
     , playButton = document.querySelector('#play')
     , loading    = document.querySelector('#loading')
     , generateRiff = document.querySelector('#generate-riff')
