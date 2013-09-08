@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie9"> <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakdown Generator</title>
+    <link rel="stylesheet" href="css/cfa821eb-37fe-4a7c-a79d-5469e3f6c406-main.css">
+</head>
+<body>
+
+    <div class="wrap">
+        <header class="jumbotron">
+            <h1 class="center">Breakdown Generator</h1>
+        </header>
+
+        <div class="container">
+            <p class="center bold">If a bunch monkeys can write some Shakspeare, I guess some javascript can compose some Meshuggah.</p>
+            <p class="center"><span class="warning">Warning</span>: The "music" you will hear will probably be the worst thing you've heard. This is some randomly generated notes and sometimes it goes nuts. But who knows, it may produce the best riff ever.</p>
+
+            <div id="app" class="app">
+                <p class="center form-group">
+                    <label for="tempo">Tempo: </label>
+                    <input id="tempo" class="form-control tempo" type="text" value="80">
+                </p>
+                <p class="center" id="loading">Loading</p>
+                <p class="soft-hidden">Playing...</p>
+                <div class="row">
+                    <div class="app-buttons col-md-2 col-md-offset-5">
+                        <button id="generate-riff" class="soft-hidden btn btn-primary">Generate a Riff</button>
+                        <button id="play" class="soft-hidden btn btn-success">Play</button>
+                    </div>
+                </div>
+                <div class="riff-output-wrapper" id="riff-output-wrapper">
+                    <h4>Riff</h4>
+                    <p id="import-error" class="soft-hidden bs-callout bs-callout-danger"></p>
+                    <pre id="riff-output" contenteditable="true"></pre>
+                    <p><button id="import-riff" class="btn btn-default">Import riff</button> Edit or paste a JSON string then hit "Import riff". Generate a riff to see an example of valid riff format.</p>
+                </div>
+            </div>
+            <div id="old-crap" class="soft-hidden center old-crap">
+                <p>Your browser does not support the web audio api. <a href="http://google.com/chrome">Go get a real one then come back</a>.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted credit col-md-3"><a href="https://github.com/romainberger/breakdown-generator/">See on GitHub</a></p>
+            <p class="text-muted credit col-md-3 col-md-offset-6">by <a href="http://romainberger.com">Romain Berger</a></p>
+        </div>
+    </footer>
+
+    <script src="js/breakdown-generator.js"></script>
+    <script src="js/cfa821eb-37fe-4a7c-a79d-5469e3f6c406-main.js"></script>
+</body>
+</html>
