@@ -32,9 +32,16 @@ task :build do
     File.delete(f)
   end
 
-  # replace file names
-  files = Dir['_site/**/**/*.html']
-#  files << '_site/index.html'
+  # replace assets file names in every page except the /lab subdirectories
+  files = [
+    '_site/index.html',
+    '_site/about/index.html',
+    '_site/contact/index.html',
+    '_site/lab/index.html',
+    '_site/music/index.html',
+    '_site/web/index.html'
+  ]
+  files.concat(Dir['_site/20**/**/*.html'])
   files.each do |file_name|
     text = File.read(file_name)
 
