@@ -1,0 +1,365 @@
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+audio:not([controls]) {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.4;
+    padding: 0;
+}
+
+/** Hot pink for life **/
+::-moz-selection {
+    background: #FE57A1;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #FE57A1;
+    color: #fff;
+    text-shadow: none;
+}
+.fl{ float: left;}
+.fr{ float: right;}
+.cb{ clear: both;}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{ text-decoration: none;}
+/* =============================================================================
+   General
+   ========================================================================== */
+#wrapper{
+    width: 1100px;
+    margin: 0 auto;
+}
+#paint{
+    margin-top: 30px;
+}
+/**
+    Top bar
+**/
+#top_bar{
+    height: 40px;
+    background-image: linear-gradient(top, #3393fa 0%, #0162ef 20%, #0164fd 55%, #2872f7 75%, #034ad8 100%);
+    background-image: -o-linear-gradient(top, #3393fa 0%, #0162ef 20%, #0164fd 55%, #2872f7 75%, #034ad8 100%);
+    background-image: -moz-linear-gradient(top, #3393fa 0%, #0162ef 20%, #0164fd 55%, #2872f7 75%, #034ad8 100%);
+    background-image: -webkit-linear-gradient(top, #3393fa 0%, #0162ef 20%, #0164fd 55%, #2872f7 75%, #034ad8 100%);
+    background-image: -ms-linear-gradient(top, #3393fa 0%, #0162ef 20%, #0164fd 55%, #2872f7 75%, #034ad8 100%);
+    -moz-box-shadow: inset 2px 0 10px #072d92, inset -2px 0 10px #072d92;
+    box-shadow: inset 2px 0 10px #072d92, inset -2px 0 10px #072d92;
+}
+#icon{
+    height: 25px;
+    width: 19px;
+    background: url('../img/icon.png') left top no-repeat;
+    margin: 5px 0 0 10px;
+}
+#top_bar span{
+    color: #fff;
+    font-size: 17px;
+    display: inline-block;
+    margin: 7px 0 0 10px;
+    cursor: default;
+}
+.top_bar_button{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    border-radius: 4px;
+    margin: 5px 5px 0 0;
+    border: 1px solid #a5cbff;
+}
+.top_bar_button div{
+    height: 25px;
+    width: 25px;
+}
+#minimize, #resize{
+    background-image: linear-gradient(top left, #99aef1, #0054e5 70%);
+    background-image: -o-linear-gradient(top left, #99aef1, #0054e5 70%);
+    background-image: -moz-linear-gradient(top left, #99aef1, #0054e5 70%);
+    background-image: -webkit-linear-gradient(top left, #99aef1, #0054e5 70%);
+    background-image: -ms-linear-gradient(top left, #99aef1, #0054e5 70%);
+    box-shadow: inset -1px -1px 4px #3d5c9f;
+}
+#minimize:hover, #resize:hover{
+    box-shadow: inset 1px 1px 10px #5b90eb;
+}
+#close{
+    background-image: linear-gradient(top left, #f5a699, #e23f14 70%);
+    background-image: -o-linear-gradient(top left, #f5a699, #e23f14 70%);
+    background-image: -moz-linear-gradient(top left, #f5a699, #e23f14 70%);
+    background-image: -webkit-linear-gradient(top left, #f5a699, #e23f14 70%);
+    background-image: -ms-linear-gradient(top left, #f5a699, #e23f14 70%);
+    box-shadow: inset -1px -1px 4px #b33c12;
+}
+#close:hover{
+    box-shadow: inset 1px 1px 10px #f8b7ac;
+}
+#minimize div{ background: url('../img/minimize.png') 3px 14px no-repeat; }
+#resize div{ background: url('../img/resize.png') 4px no-repeat; }
+#close div{ background: url('../img/close.png') 4px 4px no-repeat;}
+
+/**
+    Menu bar
+**/
+#menu_bar{
+    height: 33px;
+    background: #ebe8d7;
+    box-shadow: inset 0 -1px 2px #fff;
+}
+#menu_bar ul{
+    margin-left: 5px;
+}
+#menu_bar li{
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 33px;
+    font-size: 13px;
+}
+#menu_bar a{
+    color: #000;
+    font-weight: lighter;
+}
+#menu_bar a:hover{
+    text-decoration: underline;
+}
+#menu_bar .sub_menu{
+    display: none;
+    position: absolute;
+    background: #ebe8d7;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #b7b4a5;
+}
+#menu_bar .sub_menu li{
+    display: block;
+    padding-right: 4px;
+}
+#menu_bar button{
+    border: none;
+    background: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: lighter;
+}
+#menu_bar button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/**
+    Tool bar
+**/
+#tool_bar{
+    width: 89px;
+    height: 598px;
+    background: #ebe8d7;
+    border-top: 1px solid #b7b4a5;
+    border-bottom: 1px solid #b7b4a5;
+    box-shadow: inset -1px 0 4px #cccabd;
+    float: left;
+}
+#tool_bar ul{
+    margin: 3px 0 0 5px;
+}
+#tool_bar li{
+    display: inline-block;
+}
+#tool_bar button{
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    border: none;
+    -moz-border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    background: #ebe8d7;
+}
+#tool_bar .selected{
+    background: #fff url('../img/tool_background_selected.png') left top no-repeat;
+}
+#tool_bar button div{
+    height: 38px;
+    width: 38px;
+}
+#selectStar div{ background: url('../img/selectStar.png') center center no-repeat;}
+#selectSquare div{ background: url('../img/selectSquare.png') center center no-repeat;}
+#erase div{ background: url('../img/erase.png') center center no-repeat;}
+#fill div{ background: url('../img/fill.png') center center no-repeat;}
+#eyedropper div{ background: url('../img/eyedropper.png') center center no-repeat;}
+#zoom div{ background: url('../img/zoom.png') center center no-repeat;}
+#brush div{ background: url('../img/brush.png') center center no-repeat;}
+#spray div{ background: url('../img/spray.png') center center no-repeat;}
+#text div{ background: url('../img/text.png') center center no-repeat;}
+#line div{ background: url('../img/line.png') center center no-repeat;}
+#bezier div{ background: url('../img/bezier.png') center center no-repeat;}
+#rect div{ background: url('../img/rect.png') center center no-repeat;}
+#rect2 div{ background: url('../img/rect2.png') center center no-repeat;}
+#circle div{ background: url('../img/circle.png') center center no-repeat;}
+#rectRadius div{ background: url('../img/rectRadius.png') center center no-repeat;}
+#pen div{ background: url('../img/pen.png') center center no-repeat;}
+
+#tool_bottom_area{
+    height: 105px;
+    width: 67px;
+    background: url('../img/tool_bottom_area.png') center center no-repeat;
+    margin: 0 auto;
+}
+
+#drawing_zone{
+    float: left;
+    width: 1011px;
+    margin: 0;
+    background: #7f7f7f;
+    height: 600px;
+}
+#canvas_wrapper{
+    overflow: hidden;
+    width: 900px;
+    height: 580px;
+    margin: 4px 0 0 4px;
+}
+#canvas{
+    background: rgb(255, 255, 255);
+    cursor: default;
+}
+#canvas:active{
+    cursor: default;
+}
+
+/**
+    Color Picker
+**/
+#color_picker{
+    height: 62px;
+    padding-top: 13px;
+    background: #ebe8d7;
+    box-shadow: inset 0 1px 5px #f8f8f6;
+}
+#color_show{
+    height: 49px;
+    width: 48px;
+    background: url('../img/color_show_bg.png') center center no-repeat;
+    float: left;
+    margin-left: 5px;
+}
+.color_box{
+    height: 22px;
+    width: 22px;
+    box-shadow: inset 0 0 10px #888;
+    position: absolute;
+}
+#main_color, #secondary_color{
+    height: 18px;
+    width: 18px;
+    margin: 2px auto;
+}
+#main_color{
+    background: #000;
+}
+#secondary_color{
+    background: #fff;
+}
+#main_color_box{
+    margin-left: 8px;
+    margin-top: 9px;
+    z-index: 10;
+}
+#secondary_color_box{
+    margin-left: 19px;
+    margin-top: 17px;
+    z-index: 2;
+}
+#color_list{
+    height: 49px;
+    width: 434px;
+    position: relative;
+    left: 4px;
+}
+#color_list li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    width: 23px;
+    cursor: pointer;
+}
+#color_list div{
+    height: 21px;
+    width: 21px;
+    padding: 0;
+    margin: 0;
+    margin: 1px auto;
+    box-shadow: inset 1px 1px 5px #222;
+}
+/**
+    Infos
+**/
+#infos{
+    height: 25px;
+    background: #EBE8D7;
+    border-top: 1px solid #b7b4a5;
+    box-shadow: inset 0 1px 4px #fff;
+    line-height: 25px;
+}
+#infos p{
+    height: 25px;
+    margin: 0 0 0 3px;
+    padding: 0;
+    font-size: 13px;
+}
