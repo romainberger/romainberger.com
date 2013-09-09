@@ -70,3 +70,43 @@ task :jshint do
   puts 'Running Jshint'
   system "jshint js/main.js"
 end
+
+desc 'Create a new post'
+task :post do
+  post_name = ARGV[1]
+
+  unless post_name
+    puts "\033[31mMissing argument: post name\033[39m"
+    puts "Usage: $ rake post 'Post Name'"
+    next
+  end
+
+  puts "\n#{hr}\nCreating post \"#{post_name}\""
+
+  # filename
+  filename = post_name.downcase
+  filename = filename.gsub(' ', '-')
+  date = Time.now.strftime("%Y-%m-%d")
+  date_time = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+  image = "#{filename}.png"
+  filename = "#{date}-#{filename}.markdown"
+
+  # create file with basic content
+  content = "---\n"
+  content = "#{content}layout: post\n"
+  content = "#{content}title: #{post_name}\n"
+  content = "#{content}date: #{date_time}\n\n"
+  content = "#{content}image: #{image}\n"
+  content = "#{content}background-color: '#000'\n"
+  content = "#{content}image-class: center dark\n---\n"
+
+  File.open('_posts/'+filename, 'w') do |f|
+    f.write(content)
+  end
+
+  puts "Done              "+check
+  puts "#{hr}\n\n"
+
+  task post_name.to_sym do ; end
+
+end
