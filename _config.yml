@@ -7,4 +7,5 @@ exclude:
     - config.rb
     - sprites
     - '*.scss'
+    - tasks
 permalink: pretty
