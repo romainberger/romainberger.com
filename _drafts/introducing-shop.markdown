@@ -44,4 +44,4 @@ You can then see the available commands by running
 $ shop help
 {% endprism %}
 
-The source and the whole documentation is available on [GitHub](https://github.com/romainberger/shop). If you have any issues or feedback feel free to [ping me on twitter](http://twitter.com/romain__berger) or to open issues on GitHub.
+The source and the whole documentation are available on [GitHub](https://github.com/romainberger/shop). If you have any issues or feedback feel free to [ping me on twitter](http://twitter.com/romain__berger) or to open an issue on [GitHub](https://github.com/romainberger/shop/issues).
