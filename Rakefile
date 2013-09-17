@@ -7,7 +7,56 @@ hash = SecureRandom.uuid
 check = "\033[32m✔ Done\033[39m"
 hr = "\033[37m--------------------------------------------------\033[39m"
 
-task :default => :jshint
+task :default => :server
+
+pids = []
+
+desc "Run Jekyll server"
+task :jekyll do
+  pids << spawn('jekyll serve --watch')
+end
+
+desc "Run Jekyll server with drafts"
+task :jekylldrafts do
+  pids << spawn('jekyll serve --watch --drafts')
+end
+
+task :compass do
+  pids << spawn('compass watch')
+end
+
+desc "Run Jekyll server and compass"
+multitask :server => [:jekyll, :compass] do
+  begin
+    pids.each do |pid|
+      Process.waitpid(pid)
+    end
+  rescue
+    pids.each do |pid|
+      Process.kill("TERM", pid)
+    end
+    exit
+  end
+end
+
+desc "Run Jekyll server with drafts and compass"
+multitask :drafts => [:jekylldrafts, :compass] do
+  begin
+    pids.each do |pid|
+      Process.waitpid(pid)
+    end
+  rescue
+    pids.each do |pid|
+      Process.kill("TERM", pid)
+    end
+    exit
+  end
+end
+
+task :jshint do
+  puts 'Running Jshint'
+  system "jshint js/main.js"
+end
 
 task :build do
 
@@ -61,14 +110,9 @@ task :build do
   print "\033[36mBuild time: "
   print timeEnd - timeStart
   puts "s\033[39m"
-  puts "Build successfull                 "+check
+  puts "Build successfull                 #{check}"
   puts hr+"\n\n"
 
-end
-
-task :jshint do
-  puts 'Running Jshint'
-  system "jshint js/main.js"
 end
 
 desc 'Create a new post'
@@ -104,7 +148,7 @@ task :post do
     f.write(content)
   end
 
-  puts "Done              "+check
+  puts "Done              #{check}"
   puts "#{hr}\n\n"
 
   task post_name.to_sym do ; end
