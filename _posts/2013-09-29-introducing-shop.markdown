@@ -4,8 +4,8 @@ title: Introducing Shop
 date:   2013-09-29 20:00:00
 
 image: introducing-shop.png
-background-color: '#000'
-image-class: dark
+background-color: '#fff'
+image-class: center
 ---
 
 Since I've starting working at [BBS Concept](http://bbsconcept.com) I've spend a lot of time working on PrestaShop. And when you spend a lot of time with something you end up trying to automate as much as possible to be more efficient.
