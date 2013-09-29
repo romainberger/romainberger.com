@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introducing Shop
-date:   2013-09-16 20:00:00
+date:   2013-09-29 20:00:00
 
 image: introducing-shop.png
 background-color: '#000'
