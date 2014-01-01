@@ -19,7 +19,7 @@ After that, I started using a bunch of stuff to substitute the lack of CLI. I wr
 A few month ago I started learning Ruby and was amazed how easy it was to write gems (and how Ruby felt easy and obvious). So I thought I could give it a try once again and turn those Rakefiles into a proper CLI.
 
 # PrestaShop CLI?
-Since PrestaShop 1.5.4 a [CLI exists](http://doc.prestashop.com/display/PS15/Installing+PrestaShop+using+the+command+line)... to install the framework. Well that good but that's not a lot (compared to Rails or Symfony for example). Plus the CLI is not very appealing: You have to use one of those syntax
+Since PrestaShop 1.5.4 a [CLI exists](http://doc.prestashop.com/display/PS15/Installing+PrestaShop+using+the+command+line)... to install the framework. Well that's good but that's not a lot (compared to Rails or Symfony for example). Plus the CLI is not very appealing: You have to use one of those syntax
 
 {% prism bash %}
 $ php install_cli.php --domain=domain.com --db_name=prestashop --toomany=arguments
