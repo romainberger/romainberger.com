@@ -11,7 +11,7 @@ image-class: cover dark
 
 Besides being a developer, I make music. I write and record a lot of stuff, and from time to time it happens to work.
 
-Even though my music never got that much attention, I regulary receive messages of people asking me details on the gear and the techniques I use to record. So I thought I could write a few articles about that. I'm not sure even they will actually be several articles yet.
+Even though my music never got that much attention, I regulary receive messages of people asking me details on the gear and the techniques I use to record. So I thought I could write a few articles about that. I'm not even sure they will actually be several articles yet.
 
 They are by no means supposed to be tutorials. Everything I do, I do it from stuff I've learned reading books on recording / mixing / mastering, and from a lot of experimentation - and I probably do stuff I shouldn't be doing. It will be more about the methods I use and that seems to work. I will start with general infos on my setup and what I do, then I might go into more details for differents parts in future articles. We'll see!
 
