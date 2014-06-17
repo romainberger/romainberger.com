@@ -44,16 +44,16 @@ I also have a full battery of VSTs, Izotope plugins for mixing/mastering, Waves 
 ## Global sound
 I have a basic session that I use as a boilerplate to record or compose pretty much everything. I've set it as default session in Live so in a few seconds I have everything I need to start working.
 
-It's composed of a groups with several tracks in it:
+It's composed of groups with several tracks in them:
 
   * Drums
     * Superior Drummer 2 (+ Metal Foundry with a custom set)
     * Kick drum from Superior Drummer - different output for different post processing
     * Kick drum - external sample synced with SD.
 
-I use a second sample because I don't really like the SD sounds. They are a bit too boomy, too "real". So I use another one really clicky. The two mixed together gives me what I like.
+I use a second kick sample because I don't really like the SD sounds. They are a bit too boomy, too "real". So I use another one really clicky. The two mixed together gives me what I like.
 
-I also use a return tracks for a parallel compression. I am not going to go in details on what it is, but to explain quickly, you use a dry track and add another track and compress the crap out of it. Then you mix the two. This way you get a compressed sound but keep more dynamic than if you just compressed one track. You can learn more [here](http://en.wikipedia.org/wiki/Parallel_compression) or google around.
+I also use a return tracks for a parallel compression. I am not going to go in details on what it is, but to explain quickly, you use a dry track and add another track and compress the crap out of it. Then you mix the two. This way you get a compressed sound but keep more dynamic than if you would have just compressed one track. You can learn more [here](http://en.wikipedia.org/wiki/Parallel_compression) or google around.
 
   * Guitars
     * 2 tracks (left/right)
