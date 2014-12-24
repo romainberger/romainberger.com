@@ -1,0 +1,18 @@
+{
+  "name": "romainberger.com",
+  "version": "1.0.0",
+  "description": "Code for http://romainberger.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/romainberger/romainberger.com.git"
+  },
+  "author": "Romain Berger <romain@romainberger.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romainberger/romainberger.com/issues"
+  },
+  "homepage": "https://github.com/romainberger/romainberger.com",
+  "devDependencies": {
+    "uglify-js": "^2.4.16"
+  }
+}

@@ -69,7 +69,7 @@ task :build do
   `jekyll build`
 
   # minify js
-  system "uglifyjs _site/js/main.js _site/js/vendors/prism.js -o _site/js/main.min.js"
+  system "./node_modules/.bin/uglifyjs _site/js/main.js _site/js/vendors/prism.js -o _site/js/main.min.js"
 
   # rename files
   File.rename('_site/js/main.min.js', "_site/js/#{hash}-main.js")
