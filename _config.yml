@@ -4,6 +4,13 @@ exclude:
     - Rakefile
     - Makefile
     - Readme.md
+    - LICENSE.md
+    - LICENSE.md
+    - Gemfile.lock
+    - Gemfile
+    - node_modules
+    - package.json
+    - npm-debug.log
     - config.rb
     - sprites
     - '*.scss'

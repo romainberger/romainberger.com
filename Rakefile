@@ -76,9 +76,12 @@ task :build do
   File.rename('_site/css/main.css', "_site/css/#{hash}-main.css")
 
   # remove useless files
-  files = ['_site/js/main.js', '_site/js/vendors/prism.js']
+  files = [
+    'js/main.js',
+    'js/vendors/prism.js',
+  ]
   files.each do |f|
-    File.delete(f)
+    File.delete("_site/#{f}")
   end
 
   # replace assets file names in every page except the /lab subdirectories
