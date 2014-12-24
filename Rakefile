@@ -114,7 +114,7 @@ task :build do
   print timeEnd - timeStart
   puts "s\033[39m"
   puts "Build successfull                 #{check}"
-  puts hr+"\n\n"
+  puts "#{hr}\n\n"
 
 end
 
