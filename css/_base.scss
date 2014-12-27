@@ -240,6 +240,24 @@ h3 {
 
 }
 
+.home-sep {
+	position: relative;
+	width: 100%;
+	height: 1px;
+	margin: 40px 0;
+
+	&:before {
+		position: absolute;
+		content: '';
+		width: 90px;
+		height: 1px;
+		left: 50%;
+		top: 0;
+		margin-left: -45px;
+		background: $lightGrey;
+	}
+}
+
 /* =============================================================================
 	About
    ========================================================================== */

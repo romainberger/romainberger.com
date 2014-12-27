@@ -6,11 +6,21 @@ layout: default
     <ul class="post-list">
         {% for post in site.posts %}
             <li>
-                <a href="{{ post.url }}">
+                <a href="{{ post.url }}" title="{{ post.title }}">
                     <span class="post-title">{{ post.title }}</span>
                     <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
                 </a>
             </li>
         {% endfor %}
     </ul>
+    <!--
+    <div class="home-sep cb"></div>
+    <ul class="post-list additional-posts">
+        <li>
+            <a href="/gear-list">
+                <span class="post-title">The Gear List</span>
+            </a>
+        </li>
+    </ul>
+    -->
 </div>
