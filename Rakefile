@@ -90,8 +90,7 @@ task :build do
     '_site/about/index.html',
     '_site/contact/index.html',
     '_site/lab/index.html',
-    '_site/music/index.html',
-    '_site/web/index.html'
+    '_site/music/index.html'
   ]
   files.concat(Dir['_site/20**/**/*.html'])
   files.each do |file_name|
