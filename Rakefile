@@ -84,12 +84,10 @@ task :build do
     File.delete("_site/#{f}")
   end
 
-  # replace assets file names in every page except the /lab subdirectories
   files = [
     '_site/index.html',
     '_site/about/index.html',
     '_site/contact/index.html',
-    '_site/lab/index.html',
     '_site/music/index.html',
     '_site/gear-list/index.html'
   ]
