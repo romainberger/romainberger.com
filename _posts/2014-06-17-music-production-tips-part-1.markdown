@@ -22,11 +22,11 @@ It sounded like shit, I felt like a rock star. I recorded on a demo of a crappy 
 
 So that was the initial setup. I lost everything I've recorded back then, but believe me it wasn't good. The sound was bad, and I was a bad guitar player.
 
-I then got more gear: a line 6 interface, Ableton live, and later a iMac. I've used this setup for years, and recorded several albums with that. For the drums I first got Easy drummer from Toontrack, then Superior Drummer. The album I've released are made with this (Sihtu and Suicidal Massacre).
+I then got more gear: a line 6 interface, Ableton live, and later an iMac. I've used this setup for years, and recorded several albums with that. For the drums I first got Easy Drummer 1 from Toontrack, then Superior Drummer. All the albums I've released are made with this.
 
-Then, as I was playing in band, I got a real amp: a Laboga Mr. Hector. Damn I miss that amp. I bought a couple of mics (shure SM57 and shure SM7b) and recorded it. You can say whatever you wan about modelisation and Axe FX and Pod HD Pro, but for me nothing is better than real warm tubes.
+Then, as I was playing in band, I got a real amp: a Laboga Mr. Hector. Damn I miss that amp. I bought a couple of mics (shure SM57 and shure SM7b) and recorded it. You can say whatever you want about modelisation and Axe FX and Pod HD Pro, but for me nothing is better than real warm tubes. I would set the amp in my bedroom, mics positionned carefully and cover the whole thing with blankets to avoid reflections on the recording. And obviously I put sticky notes everywhere to make sure nobody would touch a thing to prevent loosing the precious mic positions.
 
-I was pretty happy with the sound I got with that. I've recorded a few songs (shred stuffs) and used this setup to record a couple of EP for friends (Yurakane and Hrethgir even though the last never saw the light of the day sadly). I also recorded bass with the sm7b and the direct out from a few bass amps: Ampeg and Mark Bass. Surprisingly good sound (but I know <a href="http://www.christine-lanusse.fr/" target="_blank">good bassists</a> so it probably helps).
+I was pretty happy with the sound I got with that. I've recorded a few songs (<a href="https://romainberger.bandcamp.com/album/old-demo">shred stuffs</a>) and used this setup to record a couple of EP for friends (Yurakane and Hrethgir even though the last never saw the light of the day sadly). I also recorded bass with the sm7b and the direct out from a few bass amps: Ampeg and Mark Bass. Surprisingly good sound (but I know good bassists so it probably helps).
 
 But then I moved to Paris. And going from a 300m2 house to a tiny appartement, I couldn't keep recording with a 100w amp. So I bought a Line 6 Pod HD Pro. So nowadays my setup is pretty basic:
 
