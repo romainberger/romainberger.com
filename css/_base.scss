@@ -436,14 +436,15 @@ h3 {
 	}
 
 	.text-muted {
-		font-size: 70%
+		font-size: 70%;
 	}
 }
 
-.lab-list {
-	padding-left: 18px;
+.gear-list-muted {
+	margin-top: 40px;
+	font-style: italic;
 
-	li {
-		list-style: disc;
+	&, a {
+		color: #777;
 	}
 }
