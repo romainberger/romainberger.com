@@ -9,7 +9,7 @@ image-class: none
 
 Handling internationalization in a website (be it a server-side only site or a single page app) is always challenging. The amount of work to actually manage multiple languages can be pretty huge, so if you add all the tools that you have to incorporate to automate all tasks (extract the text to translate, send them to the tool translators are using, getting them back, bundling...) it can be a lot.
 
-At Dailymotion, we've made a lot of small modules to automate all the i18n process. The whole process itself would need a pretty big blog post, so I'll keep that for later. Today, I'll talk about a very small part: handling right-to-left languages in terms of css. Being in the middle of a migration from a legacy php stack to a universal react app, we had to re-think completely how we handled this.
+At Dailymotion, we've made a lot of small modules to automate all the i18n process. The whole process itself would need a pretty big blog post, so I'll keep that for later. Today, I'll talk about a very small part: **handling right-to-left languages in terms of css**. Being in the middle of a migration from a legacy php stack to a universal react app, we had to re-think completely how we handled this.
 
 ## Before
 
