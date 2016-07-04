@@ -5,7 +5,6 @@ exclude:
     - Makefile
     - Readme.md
     - LICENSE.md
-    - LICENSE.md
     - Gemfile.lock
     - Gemfile
     - node_modules
