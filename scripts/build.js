@@ -8,7 +8,7 @@ const mkdirp = require("mkdirp")
 process.stdout.write("\u001Bc") // clear terminal
 console.log("\x1b[36mWritting static files...\x1b[0m\n\n")
 
-const config = require("./../src/config.js")
+const config = require("./../src/config")
 const routes = Object.values(config.routes)
 
 const waitFor = ms => new Promise(resolve => setTimeout(() => resolve(), ms))
