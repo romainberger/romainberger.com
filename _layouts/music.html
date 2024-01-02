@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+    {% include header.html %}
+    <div class="music-wrapper">
+        <div>
+            {% include music_list.html %}
+        </div>
+        <div class="music-content">
+            {{ content }}
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>
