@@ -11,6 +11,10 @@
         background: #2e2e2e;
         color: #eee;
         font-family: roboto, helvetica neue, sans-serif;
+        background-image: url('/assets/home.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
     a {
@@ -32,10 +36,21 @@
         padding: 0 20px;
     }
 
+    @media (max-width: 600px) {
+        .menu li {
+            display: block;
+            padding: 20px 0;
+        }
+    }
+
     .menu a:hover {
         color: #fff;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
+    }
+
+    .page-menu {
+        padding: 20px 0;
     }
 
     .home-body {
@@ -49,6 +64,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .music-body {
+        background-image: url('/assets/background-dark.jpg');
     }
 
     .music-wrapper {
@@ -80,6 +99,25 @@
         padding: 20px;
         background: #eee;
         color: #2e2e2e;
+    }
+
+    .music-select {
+        list-style: none;
+    }
+
+    .music-select li {
+        display: inline-block;
+        border-right: 1px white solid;
+        padding: 0 15px;
+        cursor: pointer;
+        color: #aaa;
+    }
+    .music-select li:last-child {
+        border-right: none;
+    }
+
+    .music-select .selected {
+        color: #fff;
     }
 
     .artist,

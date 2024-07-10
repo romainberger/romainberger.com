@@ -13,11 +13,11 @@ ga('send', 'pageview');
   integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
   crossorigin="anonymous"></script>
 <script>
-    // todo add / remove select class on list
-    $('#music-select li').on('click', function() {
-        const band = $(this).data('band')
-
+    const selectBand = band => {
+        $(`#music-select li`).removeClass('selected')
         if (band) {
+            window.location.hash = band
+            $(`#music-select li[data-band=${band}]`).addClass('selected')
             $('#music-list a').each(function() {
                 const $this = $(this)
 
@@ -30,7 +30,16 @@ ga('send', 'pageview');
             })
         }
         else {
+            window.location.hash = ''
+            $(`#music-select li[data-all]`).addClass('selected')
             $('#music-list a').show()
         }
+    }
+
+    $('#music-select li').on('click', function() {
+        const band = $(this).data('band')
+        selectBand(band)
     });
+
+    selectBand(window.location.hash.replace('#', ''))
 </script>
