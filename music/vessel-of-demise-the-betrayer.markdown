@@ -29,9 +29,9 @@ layout: music
     <iframe width="560" height="315" src="https://www.youtube.com/embed/uZ3yxbtnnWU?si=FlTiEN22brCdjO9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<div>
+<!--<div>
     <p>After having recorded Awakening by Undisclosed Dimensions, Nick (vocalist) brought me onboard for Vessel Of Demise to record solos on his songs. This was a lot of fun and I ended up writing an entire song for the EP (The Betrayer).</p>
-</div>
+</div>-->
 
 <div class="track-listing">
     <h2>Track listing</h2>

@@ -29,11 +29,11 @@ layout: music
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qmpQbJZE3jo?si=6gT_780T4G12-BLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<div>
+<!--<div>
     <p>Brain Collapse is an instrumental technical death metal EP written only for the fun of writing fast, technical music. The songs were originally named I, II, III, etc. as they have no meaning and thus wouldn't need a name. But later when adding the EP to streaming services I was forced to come up with names.
     <p>This project is probably the one I've promoted the least and didn't even try (it was released in 2014 but added in 2020 on streaming services out of lazyness). I didn't try to be really original in the music, it doesn't have any meaning or goal. But overall it is my most successful project, gathering the biggest number of streams, fans, and downloads.</p>
     <p>In 2016 I had Nicholas Colvin add vocals on one of the songs, which started our friendship and led us to collaborate with Undisclosed Dimensions and Vessel of Demise.</p>
-</div>
+</div>-->
 
 <div class="track-listing">
     <h2>Track listing</h2>

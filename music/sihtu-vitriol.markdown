@@ -29,10 +29,6 @@ layout: music
     <iframe width="560" height="315" src="https://www.youtube.com/embed/qmpQbJZE3jo?si=6gT_780T4G12-BLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<div>
-
-</div>
-
 <div class="track-listing">
     <h2>Track listing</h2>
     <ol>
