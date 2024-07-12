@@ -95,6 +95,16 @@
         width: 100%;
     }
 
+    @media (max-width: 600px) {
+        .music-list {
+            display: block;
+        }
+
+        .music-list a {
+            margin-bottom: 20px;
+        }
+    }
+
     .music-content {
         padding: 20px;
         background: #eee;
@@ -157,6 +167,12 @@
         padding: 10px 0;
     }
 
+    @media (max-width: 600px) {
+        .stream-links {
+            flex-direction: column;
+        }
+    }
+
     .stream-links a {
         display: block;
     }
@@ -173,6 +189,11 @@
     .artwork {
         width: calc(100% - 20px);
         margin: 0 10px;
+    }
+
+    .credits a {
+        color: #2e2e2e;
+        text-decoration: underline;
     }
 
     .yt-frame {

@@ -7,8 +7,9 @@ layout: music
 <h2 class="artist">Vessel Of Demise</h2>
 <div class="year">2018</div>
 
-<!--
+
 <div class="stream-links">
+    <!--
     <a href="https://open.spotify.com/intl-fr/album/01plaghS6qzLgTSs60DfIo" target="_blank">
         <img src="/assets/stream/spotify.svg" />
     </a>
@@ -21,11 +22,11 @@ layout: music
     <a href="https://www.deezer.com/fr/album/47438742" target="_blank">
         <img src="/assets/stream/deezer.svg" />
     </a>
-    <a href="https://undiscloseddimensions.bandcamp.com/album/awakening" target="_blank">
+    -->
+    <a href="https://vesselofdemise.bandcamp.com/album/the-betrayer" target="_blank">
         <img src="/assets/stream/bandcamp.svg" />
     </a>
 </div>
--->
 
 <div class="yt-frame">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/uZ3yxbtnnWU?si=FlTiEN22brCdjO9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

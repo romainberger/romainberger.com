@@ -43,5 +43,5 @@ layout: music
 <img class="artwork" src="/assets/awakening.jpg" />
 
 <div class="credits">
-    <p>Artwork: @annasdots</p>
+    <p>Artwork: <a href="https://www.instagram.com/annasdots/" target="_blank">@annasdots</a></p>
 </div>
