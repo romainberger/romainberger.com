@@ -32,15 +32,15 @@ layout: music
 <div class="track-listing">
     <h2>Track listing</h2>
     <ol>
-        <li>I - Seven</li>
-        <li>II - Mammoth</li>
-        <li>III - Through The Entrails</li>
-        <li>IV - Rise Of The Bastard</li>
-        <li>V - Scream Of The Weak</li>
-        <li>VI - Love</li>
-        <li>VII - [Redacted]</li>
-        <li>VIII - The Murderer Is A Child</li>
-        <li>IX - Let The Massacre Begin</li>
+        <li>Seven</li>
+        <li>Mammoth</li>
+        <li>Through The Entrails</li>
+        <li>Rise Of The Bastard</li>
+        <li>Scream Of The Weak</li>
+        <li>Love</li>
+        <li>[Redacted]</li>
+        <li>The Murderer Is A Child</li>
+        <li>Let The Massacre Begin</li>
     </ol>
 </div>
 

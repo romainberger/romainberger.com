@@ -32,10 +32,10 @@ layout: music
 <div class="track-listing">
     <h2>Track listing</h2>
     <ol>
-        <li>I - [4:41] I must conclude that my or perhaps even our collective environment is only a pseudo-environment</li>
-        <li>II - [4:41] Therefore a part of my unconscious does</li>
-        <li>III - [4:74] You're in the labyrinth, but Ariadne's thred is your imagination</li>
-        <li>IV - [4:103] but both would share a world made up from both previous separate world</li>
+        <li>[4:41] I must conclude that my or perhaps even our collective environment is only a pseudo-environment</li>
+        <li>[4:41] Therefore a part of my unconscious does</li>
+        <li>[4:74] You're in the labyrinth, but Ariadne's thred is your imagination</li>
+        <li>[4:103] but both would share a world made up from both previous separate world</li>
     </ol>
 </div>
 

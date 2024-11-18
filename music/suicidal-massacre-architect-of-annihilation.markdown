@@ -32,11 +32,11 @@ layout: music
 <div class="track-listing">
     <h2>Track listing</h2>
     <ol>
-        <li>I - Intro</li>
-        <li>II - Taking Off Your Eyes With My Teeth</li>
-        <li>III - Architect Of Annihilation</li>
-        <li>IV - The Black Dress</li>
-        <li>V - You Deserve To Die</li>
+        <li>Intro</li>
+        <li>Taking Off Your Eyes With My Teeth</li>
+        <li>Architect Of Annihilation</li>
+        <li>The Black Dress</li>
+        <li>You Deserve To Die</li>
     </ol>
 </div>
 
