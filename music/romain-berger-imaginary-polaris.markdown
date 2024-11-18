@@ -33,7 +33,7 @@ layout: music
     <h2>Track listing</h2>
     <ol>
         <li>Imaginary Polaris</li>
-        <li>Facing the Night</li>
+        <li>Facing the Night (feat. David & the Devil)</li>
         <li>Home</li>
     </ol>
 </div>
